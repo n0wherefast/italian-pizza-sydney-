@@ -1,0 +1,37 @@
+import React from 'react'
+import '../style/card.scss'
+import '../style/ribbon.scss'
+import { Teko } from 'next/font/google';
+import {CARD} from '../data/interface'
+
+  const teko = Teko({
+    subsets: ["latin"],
+    weight: '600'
+  });
+
+function Card({title, price ,entre, main ,dessert,special}:CARD) {
+
+  return (
+    <div className={` ${teko.className}  ${special==true ? "cardSpecial ribbon":"cardContainer"}   `}>
+    {special&& <> 
+      <div className="wrap">
+        <span className="ribbon6">Limited</span>
+      </div>
+     </> }
+        
+        <h1 className='titleCard'>{ special == true?'Special Pack' : title}</h1>
+        <div className='C-Sec'>
+            <p className='textXL'>Entre</p><p>{entre}</p>
+        </div>
+        <div className='C-Sec'>
+            <p className=' textXL'>Main</p><p className='text-center'>{main}</p>
+        </div>
+        <div className='C-Sec'>
+            <p className=' textXL'>Dessert</p><p>{dessert}</p>
+        </div>
+        <div className='C-price '>{price}</div>
+    </div>
+  )
+}
+
+export default Card

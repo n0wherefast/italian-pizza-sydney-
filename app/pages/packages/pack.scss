@@ -1,0 +1,51 @@
+@use "../../style/variable.scss" as global;
+@use "../../style/responsiveLayout.scss" as res;
+
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    gap:1rem;
+    padding-top:2rem;
+    
+    @include res.min-sm{
+      padding-top: 8rem; 
+      padding-bottom: 2rem;
+    }
+    @include res.min-lg{
+      padding-top: 4rem; 
+      padding-bottom: 2rem;
+      // min-height: 70vh;
+    }
+    @include res.min-xl{
+      padding-top: 1rem; 
+      padding-bottom: 0px;
+    }
+}
+
+.slide{
+  // background-color: aqua;
+  width: 22rem;
+  height: 35rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.swiper {
+  width: 100%;
+  height: 80%;
+  margin-top:0rem;
+  padding-bottom: 0rem;
+  // background-color: #a53434;
+  /* background: #000; */
+}
+
+.newSwiper{
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}

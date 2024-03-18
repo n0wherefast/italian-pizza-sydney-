@@ -1,0 +1,28 @@
+
+.mainAbout{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/main.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    backdrop-filter: blur(16px);
+    width: 50%;
+    height: 100vh;
+    padding: 1rem;
+}
+h1{
+    font-size: 1.5rem;
+}

@@ -1,0 +1,33 @@
+
+.main {
+    display: flex;
+  }
+  .imgCont{
+      background-image: url('../../../assets/arancini-3.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 50%;
+      height: 100vh;
+  }
+  
+  .menuList{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 50%;
+      height: 100vh;
+  }
+  
+  .list {
+    display: flex;
+    gap:1rem;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  h1{
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.75rem/* 28px */
+  }

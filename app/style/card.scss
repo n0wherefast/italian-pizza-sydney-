@@ -1,0 +1,104 @@
+@use "../style/variable.scss" as global;
+@use "../style/responsiveLayout.scss" as res;
+
+.textXL{
+    font-size: 1.8rem;
+    line-height: 1rem;
+    font-weight: 500;
+}
+
+.cardContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .1rem;
+  color: global.$zinc500;
+  width: 22rem;
+  height: 35rem;
+  padding: 1.25rem;
+  background-color: global.$slate300;
+  border-radius: 20px;
+  border: 2px solid global.$emerald;
+  @include res.max-sm{
+    width: 18rem;
+    height: 30rem;
+    margin: 1rem;
+    gap: 0px;
+}
+  @include res.min-md{
+   width: 18rem;
+}
+}
+.cardSpecial{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .1rem;
+  color: global.$zinc500;
+  width: 22rem;
+  height: 35rem;
+  padding: 1.25rem;
+  background-color: global.$special;
+  border-radius: 20px;
+  border: 2px solid global.$redOne;
+
+  @include res.max-sm{
+    width: 18rem;
+    height: 30rem;
+    margin: 1rem;
+    gap: 0px;
+}
+@include res.min-md{
+    width: 24rem;
+ }
+}
+
+.textspecial{
+    position: relative;
+    right:7.5rem;
+    font-size: x-large;
+}
+.titleCard{
+    // color: global.$emerald;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+.C-Sec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    @include res.max-sm{
+       font-size: 1rem;
+    line-height: 1rem;
+    }
+}
+
+.C-price{
+    width: 100%;
+    height: 2.5rem;
+    background-color: global.$emerald;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.85rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+    border-radius: 13px;
+}
+p{
+    margin: 1rem;
+}
+
+h1{
+    margin: 0px;
+}

@@ -1,0 +1,24 @@
+.mainNav{
+    width: 100%;
+    height: 4rem;
+    padding-top: 5rem;
+    background-color:gold;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:transparent;
+    padding: 1rem;
+    font-weight: 500;
+    border: none;
+    font-size: large;
+    
+}
+
+.link:focus{
+  background-color: white;
+}
