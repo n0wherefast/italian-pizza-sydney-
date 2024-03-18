@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import './style/navSubMenu.scss'
+import '../style/navSubMenu.scss'
 import Link from 'next/link'
 
 function NavSubMenu() {
