@@ -22,15 +22,15 @@ function HomePage() {
   return (
     // <div className='mainHome'>
       <div className='  homeContainer '>
-         <Image src={pizzaPixel} alt='pizzaPixel' className='pizzaPixel' />
-        <h1 className= {` ${libre.className } homeTitle clip-text`} >
+         <Image priority src={pizzaPixel} alt='pizzaPixel' className='pizzaPixel' />
+        <div className= {` ${libre.className } homeTit clip-text`} >
           <span className='title-text'><div className='size'>I </div>talian </span>
           <span className='title-text'><div className='size'>P </div>izza </span>
           <span className='title-text'><div className='size'>S </div>ydney </span>
-        </h1>
+        </div>
          <div className='homeCard'>
           <section>
-          <Image src={IPS} alt='image' className='IPSImage' />
+          <Image priority src={IPS} alt='image' className='IPSImage' />
           <div className='textCard'>Welcome! i&apos;m here to bring a taste of Italy  directly to your place!</div>
           </section>
           <button className='btnHome'>Order Now 🍕</button>
