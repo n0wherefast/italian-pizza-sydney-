@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss';
 import 'swiper/scss/effect-coverflow';
 import 'swiper/scss/pagination';
+// import '../../pages/packages/pack.scss'
 import { EffectCoverflow, Pagination ,Autoplay} from 'swiper/modules';
 
 import { useSelector,useDispatch } from 'react-redux';
@@ -27,7 +28,7 @@ function WrappedPackages ( data:DATA) {
     // console.log(size)
   return (
 <> 
-<div className='main'>
+<div className='mainP'>
    {size < 1024 ?
     
         <Swiper
@@ -63,7 +64,7 @@ function WrappedPackages ( data:DATA) {
         
         </Swiper>
     :
-       <div className='main'>
+       <div className='mainP'>
           {packs.map((pack:PACKAGES ,id:number)=>{  
             const {title,price,entre,main,dessert } = pack
             return(

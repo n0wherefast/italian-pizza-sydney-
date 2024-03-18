@@ -2,6 +2,7 @@ import React from 'react'
 import { client } from '@/app/data/sanity'
 import{MENU} from '@/app/data/interface'
 import './traditionals.scss'
+import WrappedMenus from '@/app/components/wrapped/WrappedMenus'
 
 async function getData() {
   const query =`
@@ -17,8 +18,9 @@ async function TraditionalsMenu() {
 const data =  await getData()
   return ( 
     <>
-    <main className='main'>
-      <div className='imgCont '></div>
+    {/* <WrappedMenus data={data} /> */}
+     <main className='mainTrad'>
+      <div className='imgContTrad '></div>
      
      <div className='menuList'>
       {data.map((itm:MENU,idx:number) => {
@@ -31,7 +33,7 @@ const data =  await getData()
         )
       })}
     </div> 
-    </main>
+    </main> 
     </>
   )
 }

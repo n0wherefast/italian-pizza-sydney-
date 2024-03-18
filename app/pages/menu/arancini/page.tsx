@@ -15,8 +15,8 @@ async function getData() {
 async function  Arancini() {
 const data =  await getData()
   return (
-    <div className='main'>
-      <div className='imgCont'></div>
+    <div className='mainAra'>
+      <div className='imgContAra'></div>
      
      <div className='menuList'>
       {data.map((itm:MENU,idx:number) => {

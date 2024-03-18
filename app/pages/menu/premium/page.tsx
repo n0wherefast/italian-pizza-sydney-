@@ -17,8 +17,8 @@ async function Premium() {
 const data =  await getData()
  console.log(data)
   return (
-    <div className='main'>
-      <div className='imgCont'></div>
+    <div className='mainPremium'>
+      <div className='imgContPremium'></div>
      
      <div className='menuList'>
       {data.map((itm:MENU,idx:number) => {
