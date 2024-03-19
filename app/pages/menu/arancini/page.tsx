@@ -1,6 +1,7 @@
 import{MENU} from '@/app/data/interface'
 import { client } from '@/app/data/sanity'
-import './arancini.scss'
+import '../../../style/menus.scss'
+import { Teko } from 'next/font/google'
 
 async function getData() {
   const query =`
@@ -12,19 +13,24 @@ async function getData() {
   return  data
 }
 
+const teko = Teko({
+  subsets: ["latin"],
+  weight: '600'
+});
+
 async function  Arancini() {
 const data =  await getData()
   return (
-    <div className='mainAra'>
+    <div className={` ${teko.className} mainSingleMenu`} >
       <div className='imgContAra'></div>
      
-     <div className='menuList'>
+     <div className='menuListPrem menuList'>
       {data.map((itm:MENU,idx:number) => {
         const {title,ingredients} = itm
         return(
           <div key={idx} className='list'>
-              <h1>{title}</h1>
-              <p>{ingredients}</p>
+              <h1 className='pizzaTitle'>{title}</h1>
+              <p className='ingredients'>{ingredients}</p>
           </div>
         )
       })}

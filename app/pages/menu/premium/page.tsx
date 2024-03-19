@@ -1,7 +1,8 @@
 import React from 'react'
 import { client } from '@/app/data/sanity'
 import{MENU} from '@/app/data/interface'
-import './premium.scss'
+import '../../../style/menus.scss'
+import { Teko } from 'next/font/google'
 
 async function getData() {
   const query =`
@@ -13,20 +14,25 @@ async function getData() {
   return  data
 }
 
+const teko = Teko({
+  subsets: ["latin"],
+  weight: '600'
+});
+
 async function Premium() {
 const data =  await getData()
- console.log(data)
-  return (
-    <div className='mainPremium'>
+
+return (
+    <div className={` ${teko.className} mainSingleMenu`} >
       <div className='imgContPremium'></div>
      
-     <div className='menuList'>
+     <div className='menuListPrem menuList'>
       {data.map((itm:MENU,idx:number) => {
         const {title,ingredients} = itm
         return(
           <div key={idx} className='list'>
-              <h1>{title}</h1>
-              <p>{ingredients}</p>
+              <h1 className='pizzaTitle'>{title}</h1>
+              <p className='ingredients'>{ingredients}</p>
           </div>
         )
       })}

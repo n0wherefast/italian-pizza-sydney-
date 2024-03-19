@@ -1,0 +1,122 @@
+@use './variable.scss' as color;
+@use './responsiveLayout.scss' as size;
+
+
+.mainMenus {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainSingleMenu {
+    display: flex;
+    flex-direction: row;
+    height: 84.8vh;
+    padding-top: 9rem;
+  }
+  .imgContTrad{
+      background-image: url('../assets/pizza_td.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 50%;
+      height: 100%;
+  }
+  
+  .menuList{
+      width: 100%;
+      display: grid;
+      grid-template-columns:  1fr 1fr 1fr;
+      padding: 1rem;
+      gap: 1rem;
+      justify-items: center;
+      align-items: center;
+      background-color: color.$slate300;
+ }
+  
+
+ .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:1.5rem;
+    width: 20rem;
+    height: 8rem;
+    border: 1px solid color.$redOne;
+    border-radius: 10px;
+  }
+
+  .PizzaTitle{
+      font-size: 2rem;
+      font-weight: 700;
+      padding: 0px;
+      margin: 0px;
+    }
+  .ingredients{
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding: 0px;
+      margin: 0px;
+    }
+    /// PREMIUM
+  .imgContPremium{
+      background-image: url('../assets/pizzaTwo.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 50%;
+      height: 100%;
+  }
+  .menuListPrem{
+    grid-template-columns:  1fr 1fr ;
+    }
+  
+  ///ARANCINI
+
+  .imgContAra{
+      background-image: url('../assets/arancini-3.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 50%;
+      height: 100%;
+  }
+  h1{
+    padding: 0px;
+    margin: 0px;
+  }
+  
+@include size.max-sm{
+  .list{
+    height: 4rem ;
+    border: 1px solid white;
+background-color: color.$slate;
+  }
+  .menuList{
+    grid-template-columns:  1fr;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+  }
+  .menuListPrem{
+    grid-template-columns:  1fr;
+  }
+  .mainSingleMenu{
+    flex-wrap: wrap;
+    padding-top: 9rem;
+  }
+  .imgContTrad {
+    width: 100%;
+    position: fixed;
+    z-index: -50;    
+  }
+  .imgContPremium {
+    width: 100%;
+    position: fixed;
+    z-index: -50;    
+  }
+  .imgContAra {
+    width: 100%;
+    position: fixed;
+    z-index: -50;    
+  }
+ 
+}

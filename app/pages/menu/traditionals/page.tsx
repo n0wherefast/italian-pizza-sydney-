@@ -1,8 +1,9 @@
 import React from 'react'
 import { client } from '@/app/data/sanity'
 import{MENU} from '@/app/data/interface'
-import './traditionals.scss'
-import WrappedMenus from '@/app/components/wrapped/WrappedMenus'
+import '../../../style/menus.scss'
+import {Teko} from 'next/font/google'
+
 
 async function getData() {
   const query =`
@@ -13,13 +14,16 @@ async function getData() {
   const data = await client.fetch(query)
   return  data
 }
-
+const teko = Teko({
+  subsets: ["latin"],
+  weight: '600'
+});
 async function TraditionalsMenu() {
 const data =  await getData()
   return ( 
     <>
     {/* <WrappedMenus data={data} /> */}
-     <main className='mainTrad'>
+     <main className={` ${teko.className} mainSingleMenu`} >
       <div className='imgContTrad '></div>
      
      <div className='menuList'>
@@ -27,8 +31,8 @@ const data =  await getData()
         const {title,ingredients} = itm
         return(
           <div key={idx} className='list'>
-              <h1 >{title}</h1>
-              <p>{ingredients}</p>
+              <h1 className='PizzaTitle'>{title}</h1>
+              <p className='ingredients'>{ingredients}</p>
           </div>
         )
       })}

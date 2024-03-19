@@ -2,9 +2,8 @@
 import React from 'react'
 import { client } from '@/app/data/sanity'
 import{MENU} from '@/app/data/interface'
-import './menus.scss'
-import NavSubMenu from '../../components/NavSubMenu'
-import MenuData from '@/app/components/MenuData'
+import '../../style/menus.scss'
+
 import TraditionalsMenu from './traditionals/page'
 
 
@@ -13,9 +12,9 @@ import TraditionalsMenu from './traditionals/page'
 
   return ( 
   <>
-    <main className='main'>
+    {/* <main className='mainMenus'> */}
       <TraditionalsMenu/>
-    </main>
+    {/* </main> */}
   </>
   )
 }
