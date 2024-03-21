@@ -27,7 +27,7 @@ export const  links = [
     },
     {id:3,
     name:'Gallery',
-    path:'/pages',
+    path:'/pages/gallery',
     delay:0.8,
     news: false
     },

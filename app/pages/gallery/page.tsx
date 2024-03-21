@@ -1,38 +1,27 @@
 import React from 'react'
-import { client } from '@/app/data/sanity'
-import{MENU} from '@/app/data/interface'
-import './premium.scss'
+import './gallery.scss'
+import GalleryWrapped from '@/app/components/wrapped/GalleryWrapped'
 
 async function getData() {
-  const query =`
-  *[_type=='menu_p'] | order(_createdAT desc){
-    title,ingredients
-  }
-  `
-  const data = await client.fetch(query)
-  return  data
+  const data =  await fetch('https://picsum.photos/v2/list')
+      .then(response => response.json())
+      .then(json => json)
+      return data
 }
 
-async function Premium() {
-const data =  await getData()
- console.log(data)
+
+getData()
+
+
+   
+
+async function Gallery() {
+  const data = await getData()
   return (
-    <div className='main'>
-      <div className='imgCont'></div>
-     
-     <div className='menuList'>
-      {data.map((itm:MENU,idx:number) => {
-        const {title,ingredients} = itm
-        return(
-          <div key={idx} className='list'>
-              <h1>{title}</h1>
-              <p>{ingredients}</p>
-          </div>
-        )
-      })}
-    </div> 
-    </div>
+    <>
+    <GalleryWrapped data={data} />
+    </>
   )
 }
 
-export default Premium
+export default Gallery
