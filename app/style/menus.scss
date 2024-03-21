@@ -87,11 +87,14 @@
   
 @include size.max-sm{
   .list{
+    
     height: 4rem ;
+    width: 85%;
     border: 1px solid white;
-background-color: color.$slate;
+    background-color: color.$slate;
   }
   .menuList{
+    width: 100%;
     grid-template-columns:  1fr;
     background-color: transparent;
     backdrop-filter: blur(8px);
