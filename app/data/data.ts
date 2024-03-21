@@ -38,7 +38,7 @@ export const  links = [
     // },
     {id:5,
     name:'About',
-    path:'/pages',
+    path:'/pages/about',
     delay:1,
     news: false
     },

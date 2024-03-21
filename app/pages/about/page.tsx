@@ -4,7 +4,16 @@ import './about.scss'
 function About() {
   return (
     <div className='mainAbout'>
-    <div className='description'>
+      <div className='header'>
+          <div className='image'></div>
+      </div>
+      <div className='body'>
+          <div className='image'></div>
+      </div>
+      <div className='header'>
+          <div className='image'></div>
+      </div>
+    {/* <div className='description'>
       <h1 className=' text-2xl'>
         Salve a tutti
       </h1>
@@ -21,7 +30,7 @@ function About() {
 
       We are here to make your day special such as birthday, family gather, teambonding, wedding etc.
       </p>
-    </div>
+    </div> */}
   </div>
   )
 }
