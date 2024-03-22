@@ -1,11 +1,13 @@
+@use '../../style//responsiveLayout.scss' as size;
 
 .mainAbout{
     width: 100vw;
-    height: 100vh;
+    height: 91.5vh;
     display: flex;
     flex-direction: column;
-    background-color: aqua;
-    // padding-top:6rem;
+    // background-color: aqua;
+    padding-top:5rem;
+    justify-content: space-around;
     // justify-content: start;
     // align-items: start;
     // width: 100%;
@@ -14,45 +16,63 @@
     // background-repeat: no-repeat;
     // background-position: center;
 }
-.header{
-    background-color: aquamarine;
+.sections{
+    // background-color: aquamarine;
     width: 100%;
-    height: 20rem;
-    margin-top: 5rem;
+    height: 45vh;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;    
 }
-.body{
-    background-color: aquamarine;
+.mid-sections{
+    // background-color: aquamarine;
     width: 100%;
-    height: 20rem;
-    margin-top: 5rem;
+    height: 45vh;
     display: flex;
-    justify-content: start;
+    justify-content: space-between ;
     align-items: center;    
 }
 .image{
-width: 18rem;
-height: 18rem;
+width: 25rem;
+height: 25rem;
 background-color: red;
-margin-right: 3rem;
+margin: 3rem;
 border-radius: 10px;
-
 }
+
 .description{
-    display: flex;
+    // display: flex;
     flex-direction: column;
-    gap: 2.5rem;
-    align-items: center;
-    justify-content: center;
+    // gap: 1rem;
+    // align-items: center;
+    // justify-content: center;
     font-weight: bold;
-    font-size: 1.25rem;
-    backdrop-filter: blur(16px);
-    width: 50%;
-    height: 100vh;
+    font-size: 1.6rem;
+    // backdrop-filter: blur(16px);
+    width: 35%;
     padding: 1rem;
 }
 h1{
     font-size: 1.5rem;
 }
+
+
+@include size.max-sm{
+  .image{
+    width: 15rem;
+    height: 12rem;
+    margin: 1rem;
+  }
+  .description{
+    font-size: small;
+    width: 50%;
+  }
+  .mid-sections, .sections{
+    height: 20rem;
+    background-color: blue;
+  }
+  .mainAbout{
+    background-color: aqua;
+    justify-content: center;
+  }
+  }
