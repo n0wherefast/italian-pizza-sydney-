@@ -33,17 +33,25 @@ margin: 3rem;
 border-radius: 10px;
 }
 
-.Contact{
-    // display: flex;
+.Social{
     flex-direction: column;
-    // gap: 1rem;
-    // align-items: center;
-    // justify-content: center;
     font-weight: bold;
     font-size: 1.6rem;
     // backdrop-filter: blur(16px);
     width: 35%;
-    // padding: 1rem;
+    padding: 1rem;
+}
+.Contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 1.6rem;
+    width: 35%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: .5rem;
+    // background-color: brown;
 }
 h1{
     font-size: 1.5rem;
@@ -55,9 +63,13 @@ h1{
       height: 12rem;
       margin: 1rem;
     }
-    .Contact{
+    .Social{
       font-size: .6rem;
       width: 50%;
+    }
+    .Contact{
+      font-size: 1rem;
+      width: 100%;
     }
     .mid-sectionsContact, .sectionsContact{
       height: 20rem;
