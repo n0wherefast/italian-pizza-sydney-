@@ -14,7 +14,7 @@
     width: 100%;
     height: 45vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;    
 }
 .mid-sectionsContact{
@@ -22,7 +22,7 @@
     width: 100%;
     height: 45vh;
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-around ;
     align-items: center;    
 }
 .imageContact{
@@ -32,25 +32,34 @@ background-color: red;
 margin: 3rem;
 border-radius: 10px;
 }
+.socialCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .Social{
-    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 2rem;
     // backdrop-filter: blur(16px);
     width: 35%;
     padding: 1rem;
+    color: white;
 }
 .Contact{
     display: flex;
     justify-content: center;
     flex-direction: column;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     width: 35%;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: .5rem;
+    padding-left: .9rem;
     // background-color: brown;
 }
 h1{
@@ -59,17 +68,24 @@ h1{
 
 @include size.max-sm{
     .imageContact{
-      width: 15rem;
+      width: 12rem;
       height: 12rem;
       margin: 1rem;
     }
+    .socialCont{
+        background-color: brown;
+        border-radius: 100px;
+        width: 11rem;
+        height: 11rem;
+    }
     .Social{
-      font-size: .6rem;
-      width: 50%;
+      font-size: 2.5rem;
+      width: 100%;
+    //   background-color: yellow;
     }
     .Contact{
-      font-size: 1rem;
-      width: 100%;
+      font-size: 1.1rem;
+      width: 90%;
     }
     .mid-sectionsContact, .sectionsContact{
       height: 20rem;

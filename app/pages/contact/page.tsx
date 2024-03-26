@@ -1,15 +1,15 @@
 import React from 'react'
 import './contact.scss'
 import Image from 'next/image'
+import { SlSocialInstagram ,SlSocialFacebook} from "react-icons/sl";
+import { FaWhatsapp } from "react-icons/fa";
 
 function Page() {
   return (
     <div className='mainContact'>
     <div className='sectionsContact'>
-      <div className='imageContact'></div>
-      <div className='Social'>
+      <div className='imageContact'/>
       
-      </div>
       
     </div>
     <div className='Contact'>
@@ -18,11 +18,16 @@ function Page() {
       </div>
 
     <div className='mid-sectionsContact'>
-      
-      <div className='Social'>
-           
+      <div className="socialCont">
+            <div className='Social'>
+                <SlSocialFacebook/>
+                <SlSocialInstagram/>  
+            </div>
+            <div className='Social'>
+                <FaWhatsapp/>
+           </div>
       </div>
-      <div className='imageContact'></div>
+      <div className='imageContact'/>
     </div>  
 </div>
   )
