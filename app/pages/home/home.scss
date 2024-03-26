@@ -40,7 +40,7 @@
     gap: 1rem;
     @include res.max-sm{
       width: 90vw;
-      height: 27vh;
+      min-height: 28vh;
       // background-color: aqua;
     }
     @include res.min-md{
