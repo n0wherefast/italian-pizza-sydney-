@@ -8,11 +8,17 @@ function About() {
         <div className='description'>
             <h1 className=''>
             </h1>
-            <p>
+            <p> My name is Alessandro and I&apos;m from Sicily. I started this job when I was a kid with a lot of passion and sacrificies. Now I&apos;m here to bring a taste of Italy directly to your place
+              We offer authentic
+              Italian Pizza
+              Mobile wood fire oven to your door for wide range of function and events
+              We are here to make your day special such as birthday, family gather, teambonding, wedding etc.
+              </p>
+            {/* <p>
             Mi chiamo Alessandro e vengo dalla Sicilia.
             Ho cominciato questo mestiere da ragazzino con tanta passione e sacrificio.
             Adesso sono qui per offrirvi un assaggio di Italia direttamente nelle vostre case.
-        </p>
+        </p> */}
         </div>
         <div className='image'></div>
       </div>
@@ -21,12 +27,9 @@ function About() {
       <div className='mid-sections'>
         <div className='image'></div>
         <div className='description'>
-              <p> My name is Alessandro and I&apos;m from Sicily. I started this job when I was a kid with a lot of passion and sacrificies. Now I&apos;m here to bring a taste of Italy directly to your place
-              We offer authentic
-              Italian Pizza
-              Mobile wood fire oven to your door for wide range of function and events
-
-              We are here to make your day special such as birthday, family gather, teambonding, wedding etc.
+              <p> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eligendi esse consequatur sed eveniet suscipit corporis cum ipsa omnis, repellendus autem neque pariatur reprehenderit optio blanditiis saepe laboriosam minus mollitia minima quia odio earum, illo inventore quas? Voluptas aspernatur esse,
+                 non dolor voluptatibus voluptatum cum illum, vitae ut inventore iusto.
               </p>
         </div>
       </div>
