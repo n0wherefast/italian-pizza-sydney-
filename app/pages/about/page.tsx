@@ -47,9 +47,6 @@ function About() {
             <p>E-mail: Italianpizzasydney88@gmail.com</p>
       </div>
 
-      {/* <div className='sections'>
-          <div className='image'></div>
-      </div> */}
     
   </div>
   )

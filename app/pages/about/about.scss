@@ -40,11 +40,10 @@ h1{
 .image{
     background-color: red;
     margin: 1rem;
+    width: 20rem;
+    height: 15rem;
 }
 
-.description{
- 
-}
 
 
 .socialCont{
@@ -62,6 +61,7 @@ h1{
     box-shadow:  3px 3px 1px black,
     6px 6px 1px black,
     10px 10px 1px black,;
+
 }
 
 .Social{
@@ -82,12 +82,9 @@ h1{
 
 @include size.max-sm{
   .image{
-    width: 20rem;
-    height: 15rem;
+   
   }
-  .description{
 
-  }
   .mid-sections, .sections{
   
 

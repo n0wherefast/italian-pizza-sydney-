@@ -80,8 +80,9 @@
  .mobileLink{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 2.5rem;
+    justify-content: start;
+    margin-top: 2rem;
+    gap: 4rem;
     align-items: start;
     height: 100%;
     width: 100%;
@@ -114,7 +115,7 @@
     text-shadow: 3px 2px 1px black;
      height: 3rem;
      width: 100%;
-     font-size: 2.5rem;
+     font-size: 2.9rem;
    }
 }
 
