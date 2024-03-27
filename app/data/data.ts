@@ -42,12 +42,12 @@ export const  links = [
     delay:1,
     news: false
     },
-    {id:6,
-    name:'Contact',
-    path:'/pages/contact',
-    delay:1,
-    news: false
-    },
+    // {id:6,
+    // name:'Contact',
+    // path:'/pages/contact',
+    // delay:1,
+    // news: false
+    // },
 ]
 // export const  linksSubMenu = [
 //     {id:0,

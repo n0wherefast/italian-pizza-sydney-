@@ -15,18 +15,10 @@ function Page() {
     <div className='Contact'>
         <p>Call: 0481.769.450</p>
         <p>E-mail: Italianpizzasydney88@gmail.com</p>
-      </div>
+    </div>
 
     <div className='mid-sectionsContact'>
-      <div className="socialCont">
-            <div className='Social'>
-                <SlSocialFacebook/>
-                <SlSocialInstagram/>  
-            </div>
-            <div className='Social'>
-                <FaWhatsapp/>
-           </div>
-      </div>
+     
       <div className='imageContact'/>
     </div>  
 </div>
