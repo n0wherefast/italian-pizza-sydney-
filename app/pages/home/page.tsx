@@ -23,7 +23,7 @@ function HomePage() {
     // <div className='mainHome'>
       <div className='  homeContainer '>
          <Image priority src={pizzaPixel} alt='pizzaPixel' className='pizzaPixel' />
-        <div className= {` ${libre.className } homeTit clip-text`} >
+        <div className= {`  homeTit clip-text`} >
           <span className='title-text'><div className='size'>I </div>talian </span>
           <span className='title-text'><div className='size'>P </div>izza </span>
           <span className='title-text'><div className='size'>S </div>ydney </span>

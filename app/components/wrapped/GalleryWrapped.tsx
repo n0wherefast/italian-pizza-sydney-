@@ -9,28 +9,28 @@ function GalleryWrapped({data}:any) {
     console.log(data)
     const [click, setClick] = useState(true)
   return (
-    <div className='contain'>
-    <div className= {` ${click === true? 'gallery'  : 'red'} `}>
+    <div className='containGal'>
+    <div className='gallery'>
 
        {/* <Image src={photos[0].download_url}  alt='p' width={200} height={200} /> */}
-    <div className='col'>
+    <div className='colGal'>
       {photosOne.map((pic:any , index:number)=>{
         return(
-            <Image onClick={()=>setClick(!click)}  className='image' key={index} src={pic.download_url} width={pic.width/8}height={pic.height/8} alt='photo'/>
+            <Image onClick={()=>setClick(!click)}  className='imageGal' key={index} src={pic.download_url} width={pic.width/8}height={pic.height/8} alt='photo'/>
         )
          })}
     </div>
-    <div className='col'>
+    <div className='colGal'>
       {photosTwo.map((pic:any , index:number)=>{
         return(
             <Image className='image' key={index} src={pic.download_url} width={pic.width/8}height={pic.height/8} alt='photo'/>
         )
          })}
     </div>
-    <div className='col'>
+    <div className='colGal'>
       {photosThree.map((pic:any , index:number)=>{
         return(
-            <Image className='image' key={index} src={pic.download_url} width={pic.width/8}height={pic.height/8} alt='photo'/>
+            <Image className='imageGal' key={index} src={pic.download_url} width={pic.width/8}height={pic.height/8} alt='photo'/>
         )
          })}
     </div>

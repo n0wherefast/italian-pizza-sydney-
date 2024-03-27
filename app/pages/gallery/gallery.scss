@@ -4,7 +4,7 @@
     padding: 0px;
     margin: 0px;
 }
-.contain{
+.containGal{
     max-width: 1224px;
     width: 90%;
     margin: auto;
@@ -19,12 +19,12 @@
      gap: .8rem;
   }
 
-  .col{
+  .colGal{
     display: flex;
     flex-direction: column;
     gap: .8rem;
   }
-.image {
+.imageGal {
     width: 100%;
     height: 100%;
     border-radius: 5px;
