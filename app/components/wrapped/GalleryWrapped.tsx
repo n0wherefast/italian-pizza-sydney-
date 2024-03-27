@@ -23,7 +23,7 @@ function GalleryWrapped({data}:any) {
     <div className='colGal'>
       {photosTwo.map((pic:any , index:number)=>{
         return(
-            <Image className='image' key={index} src={pic.download_url} width={pic.width/8}height={pic.height/8} alt='photo'/>
+            <Image className='imageGal' key={index} src={pic.download_url} width={pic.width/8}height={pic.height/8} alt='photo'/>
         )
          })}
     </div>
