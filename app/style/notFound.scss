@@ -1,0 +1,31 @@
+@use "../style/variable.scss" as i;
+
+.notFoundMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:radial-gradient(circle at center, i.$redOne, darken(i.$redOne, 20%));
+    width: 100wh;
+    height: 100vh;
+    gap: 1rem;
+}
+.notFoundText{
+    font-size: xx-large;
+    font-weight: 800;
+    color: white;
+    border-bottom: 1px solid white ;
+}
+.notFoundLink{
+    font-size: x-large;
+    font-weight: 800;
+    color: white;
+    border: 1px solid white;
+    border-radius:  5px;
+}
+.notFoundLink, .notFoundText {
+    padding: 1rem;
+}
+.slice{
+    font-size: xx-large;
+}

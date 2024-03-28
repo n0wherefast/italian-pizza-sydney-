@@ -1,0 +1,52 @@
+@use "../style/variable.scss" as i;
+$roni: #cc333f;
+
+@mixin size($h: 100%, $w: 100%) {
+  height: $h;
+  width: $w;
+}
+
+.mainLoading {
+  &:before{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+    width:15vmin;
+    height:2vmin;
+    background:darken($roni, 15%);
+    margin-top:17.5vmin;
+    filter:blur(10px);
+    border-radius:100%;
+  }
+  @include size(100vh, 100vw);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+  background:radial-gradient(circle at center, i.$redOne, darken(i.$redOne, 20%));
+      
+}
+.load{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+}
+
+
+.pizza{
+    animation: bounce 1s infinite;
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+}
