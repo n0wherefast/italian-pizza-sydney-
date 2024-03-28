@@ -4,6 +4,10 @@ import Image from 'next/image'
 import { SlSocialInstagram ,SlSocialFacebook} from "react-icons/sl";
 import { FaWhatsapp } from "react-icons/fa";
 
+export const metadata ={
+  title: 'Contacts'
+}
+
 function Page() {
   return (
     <div className='mainContact'>

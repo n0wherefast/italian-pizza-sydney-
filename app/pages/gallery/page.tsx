@@ -12,7 +12,9 @@ async function getData() {
 
 getData()
 
-
+export const metadata ={
+  title: 'Gallery'
+}
    
 
 async function Gallery() {

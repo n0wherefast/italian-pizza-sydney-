@@ -6,7 +6,9 @@ import '../../style/menus.scss'
 
 import TraditionalsMenu from './traditionals/page'
 
-
+export const metadata ={
+  title: 'Menu'
+}
 
  function Menu() {
 

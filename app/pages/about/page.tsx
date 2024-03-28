@@ -3,6 +3,10 @@ import './about.scss'
 import { SlSocialInstagram ,SlSocialFacebook} from "react-icons/sl";
 import { FaWhatsapp } from "react-icons/fa";
 
+export const metadata ={
+  title: 'About'
+}
+
 function About() {
   return (
     <div className='mainAbout'>

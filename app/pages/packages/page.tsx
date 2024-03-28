@@ -14,7 +14,9 @@ async function getData() {
   const data = await client.fetch(query)
   return data;
 }
-
+export const metadata ={
+  title: 'Packages'
+}
 async function  Packages() {
   const data = await getData() 
 
