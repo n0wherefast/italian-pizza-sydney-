@@ -22,20 +22,27 @@ function HomePage() {
   return (
     // <div className='mainHome'>
       <div className='  homeContainer '>
-         <Image priority src={pizzaPixel} alt='pizzaPixel' className='pizzaPixel' />
+
+           <Image priority src={pizzaPixel} alt='pizzaPixel' className='pizzaPixel' />
+
         <div className= {`  homeTit clip-text`} >
-          <span className='title-text'><div className='size'>I </div>talian </span>
-          <span className='title-text'><div className='size'>P </div>izza </span>
-          <span className='title-text'><div className='size'>S </div>ydney </span>
+          <span className='title-text'> Italian  </span>
+          <span className='title-text'>Pizza </span>
+          <span className='title-text'>Sydney </span>
         </div>
-         <div className='homeCard'>
-          <section>
-          <Image priority src={IPS} alt='image' className='IPSImage' />
-          <div className='textCard'>Welcome! i&apos;m here to bring a taste of Italy  directly to your place!</div>
-          </section>
+
+        
+
+
+  <div className='homeCard'>
+          <div className='cardSection'>
+            <Image priority src={IPS} alt='image' className='IPSImage' />
+            <div className='textCard'>Welcome! i&apos;m here to bring a taste of Italy  directly to your place!</div>
+          </div>
           <button className='btnHome'>Order Now 🍕</button>
-      
         </div>
+
+         
       </div>
     // </div>
   )
