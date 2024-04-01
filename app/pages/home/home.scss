@@ -57,7 +57,7 @@
     font-size: 1.1rem;
     font-weight: 600;
     width: 40%;
-    height: 20%;
+    height: 50%;
     margin-left: 1rem;
     @include res.min-sm{
       font-size: 1.3rem;
@@ -75,8 +75,21 @@
   // }
   .cardSection{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 65%;
+    width: 100%;
     // background-color: aqua;
+  }
+  .event{
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid white;
+    padding: .5rem;
+    margin-right: 3rem;
+    font-size: x-large;
+    font-weight: 800;
+    color: white;
   }
   .textCard{
     flex: 20;

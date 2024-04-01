@@ -4,6 +4,7 @@ import { Titan_One ,Wix_Madefor_Text,Libre_Franklin,Teko} from 'next/font/google
 import './home.scss'
 import IPS from '../../assets/pizzaTruck.png'
 import pizzaPixel from '../../assets/pizzaPixel.png'
+import { MdArrowOutward } from "react-icons/md";
 
 const titan = Titan_One({
   subsets: ["latin"],
@@ -39,7 +40,14 @@ function HomePage() {
             <Image priority src={IPS} alt='image' className='IPSImage' />
             <div className='textCard'>Welcome! i&apos;m here to bring a taste of Italy  directly to your place!</div>
           </div>
-          <button className='btnHome'>Order Now 🍕</button>
+          <div className="cardSection">
+            <button className='btnHome'>Order Now 🍕</button>
+            <button className="event">
+                New Event
+              <MdArrowOutward />
+            </button>
+          </div>
+          
         </div>
 
          
