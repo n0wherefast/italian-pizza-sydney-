@@ -5,7 +5,7 @@
 .homeContainer{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: start;
     padding-top: 3rem;
     width: 100vw;
@@ -19,7 +19,7 @@
         height: 100vh;
     }
     @include res.min-lg   {
-        justify-content: space-evenly;
+        justify-content: space-around;
         gap: 0rem;
         padding: 0px;
         width: 100%;
@@ -122,7 +122,7 @@
     gap: 0rem;
     flex-direction: column;
     padding-left: .5rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -151,11 +151,10 @@
     }
 }
 .title-text{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: block;
+    // flex-direction: row;
+    // align-items: center;
     // background-color: aqua;
-
 }
 
 .size{
@@ -235,6 +234,9 @@
         font-size: medium;
         font-weight: 800;
       }
+      p::first-letter{
+        font-size:130%;
+      }
   }
   
   @include res.min-md {
@@ -248,7 +250,7 @@
       width: 35rem;
       height: 20rem;
     }
-     
+   
   }
   @include res.min-lg{
     .pizzaPixel{

@@ -1,0 +1,28 @@
+@use "../../style/variable.scss" as global;
+@use "../../style/responsiveLayout.scss" as res;
+
+
+.mainEvent{
+    background-color: gold;
+    width: 100vw;
+    height: 100vh;
+    padding-top:5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+    font-weight: 800;
+    .titleEvent{
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .imageEvent{
+    background-color: red;
+    width: 75%;
+    height: 30%;
+  }
+}
+
+

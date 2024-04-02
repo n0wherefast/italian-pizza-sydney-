@@ -12,8 +12,9 @@ import { Libre_Franklin,Teko} from 'next/font/google'
 import { useSelector,useDispatch } from 'react-redux';
 import { RootState } from '../redux/store';
 import { updateValue } from '../redux/slice/sizeManager';
+import { updatePack } from '../redux/slice/globaleStates';
 
-import useSize from '../redux/hooks/useSize';
+import useSize from '../hooks/useSize';
 
 
 const libre = Libre_Franklin({
@@ -29,8 +30,9 @@ const teko = Teko({
 function Navbar() {
     // const [isClick,setIsClick] = useState(false)
     // const [width,setWidth] = useState(0)
-    const [notify,setNotify] = useState(true)
+    // const [notify,setNotify] = useState(true)
     // const size = useSelector((state:RootState) =>state.size.value)
+    const  notify = useSelector((state:RootState) => state.globaleStates.isPack )
     const dispatch = useDispatch()
     const [size,isClick,setIsClick] = useSize()
 

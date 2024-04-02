@@ -4,37 +4,35 @@ import React from 'react'
 import Card from '@/app/components/Card';
 import './pack.scss'
 import WrappedPackages from '@/app/components/wrapped/WrappedPackages';
-
-async function getData() {
-  const query =`
+ const queryPack =`
   *[_type=='packages'] | order(_createdAT desc){
     title,price,entre,main,dessert
   }`;
+  const querySpecialPack =`
+  *[_type=='special_pack'] | order(_createdAT desc){
+    title,price,entre,main,dessert,isPack,
+  }`;
 
+
+async function getData(query:string) {
   const data = await client.fetch(query)
   return data;
 }
+
+
 export const metadata ={
   title: 'Packages'
 }
+
 async function  Packages() {
-  const data = await getData() 
+  const dataPack = await getData(queryPack) 
+  const dataSpecialPack = await getData(querySpecialPack) 
+
 
   return (
     <>
-    <WrappedPackages data={data}/>
-        {/* <div className='main'>
-          {data.map((pack:PACKAGES ,id:number)=>{  
-            const {title,price,entre,main,dessert } = pack
-            return(
-              <div className='' key={id}>
-                <Card title={title} price={price}  entre={entre} main={main} dessert={dessert}/>
-              </div>
-            )
-          })}
-        </div> 
-    </WrappedPackages> */}
-  </>
+      <WrappedPackages data={{dataPack,dataSpecialPack}} />
+    </>
   )
 }
 

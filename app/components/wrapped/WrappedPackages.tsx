@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { PACKAGES,DATA } from '@/app/data/interface';
 import Card from '../Card';
-import useSize from '@/app/redux/hooks/useSize';
+import useSize from '@/app/hooks/useSize';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss';
@@ -14,19 +14,28 @@ import { EffectCoverflow, Pagination ,Autoplay} from 'swiper/modules';
 import { useSelector,useDispatch } from 'react-redux';
 import { RootState } from '../../redux/store';
 import { updateValue } from '../../redux/slice/sizeManager';
+import { updatePack } from '@/app/redux/slice/globaleStates';
 
 
-function WrappedPackages ( data:DATA) {
-    const packs = data.data
-    // const size = useSelector((state:RootState)=>state.size.value)
+function WrappedPackages ( data:DATA ) {
+    const {dataPack} = data.data
+    const {title,isPack,dessert,main,entre,price}:PACKAGES = data.data.dataSpecialPack[0]
+    
+    
     const [size,width,isClick] = useSize()
+    const dispatch = useDispatch()
 
-    // const [newSize,setNewSize] = useState(0)
+    useEffect(()=>{
+      dispatch(updatePack(isPack))
+      
+    },[])
 
-  
+    console.log(isPack)
+    
 
-    // console.log(size)
-  return (
+
+
+    return (
 <> 
 <div className='mainP'>
    {size < 1024 ?
@@ -53,7 +62,7 @@ function WrappedPackages ( data:DATA) {
                 className='newSwiper'
         >
         
-            {packs.map((pack:PACKAGES ,id:number)=>{  
+            {dataPack.map((pack:PACKAGES ,id:number)=>{  
                 const {title,price,entre,main,dessert } = pack
                 return(
                 <SwiperSlide className='slide' key={id}>
@@ -65,7 +74,7 @@ function WrappedPackages ( data:DATA) {
         </Swiper>
     :
        <div className='mainP'>
-          {packs.map((pack:PACKAGES ,id:number)=>{  
+          {dataPack.map((pack:PACKAGES ,id:number)=>{  
             const {title,price,entre,main,dessert } = pack
             return(
               <div className='' key={id}>
@@ -75,9 +84,11 @@ function WrappedPackages ( data:DATA) {
           })}
          </div>    
     }
-
-    <Card title={'lorem'} price={'lorem'}  entre={'lorem'} main={'lorem'} dessert={'lorem'} special={true} />
-</div>  
+ {
+  isPack == true?<Card title={title} price={price}  entre={entre} main={main} dessert={dessert} special={isPack} /> : null
+ }
+    
+</div>   
     </>
   )
 }

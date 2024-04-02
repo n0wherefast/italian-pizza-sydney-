@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import { Titan_One ,Wix_Madefor_Text,Libre_Franklin,Teko} from 'next/font/google'
@@ -5,6 +7,10 @@ import './home.scss'
 import IPS from '../../assets/pizzaTruck.png'
 import pizzaPixel from '../../assets/pizzaPixel.png'
 import { MdArrowOutward } from "react-icons/md";
+import Link from 'next/link'
+import { useSelector,useDispatch } from 'react-redux';
+import { RootState } from '../../redux/store';
+import { updateValue } from '../../redux/slice/sizeManager';
 
 const titan = Titan_One({
   subsets: ["latin"],
@@ -20,6 +26,10 @@ const libre = Libre_Franklin({
 });
 
 function HomePage() {
+
+  const isEvent = useSelector((state:RootState) =>state.globaleStates.isEvent)
+
+  // console.log(isEvent)
   return (
     // <div className='mainHome'>
       <div className='  homeContainer '>
@@ -27,9 +37,9 @@ function HomePage() {
            <Image priority src={pizzaPixel} alt='pizzaPixel' className='pizzaPixel' />
 
         <div className= {`  homeTit clip-text`} >
-          <span className='title-text'> Italian  </span>
-          <span className='title-text'>Pizza </span>
-          <span className='title-text'>Sydney </span>
+          <p className='title-text'> Italian  </p>
+          <p className='title-text'>Pizza </p>
+          <p className='title-text'>Sydney </p>
         </div>
 
         
@@ -42,10 +52,14 @@ function HomePage() {
           </div>
           <div className="cardSection">
             <button className='btnHome'>Order Now 🍕</button>
-            <button className="event">
-                New Event
-              <MdArrowOutward />
-            </button>
+            {
+                isEvent == true ?  
+                <Link href={'/pages/event'} className="event">
+                  New Event
+                <MdArrowOutward />
+              </Link> : null
+            }
+           
           </div>
           
         </div>
