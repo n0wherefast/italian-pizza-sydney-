@@ -229,6 +229,12 @@
       width: 22rem;
       height: 13rem;
   }
+      .event{
+        padding: .4rem;
+        margin-right: 2rem;
+        font-size: medium;
+        font-weight: 800;
+      }
   }
   
   @include res.min-md {
