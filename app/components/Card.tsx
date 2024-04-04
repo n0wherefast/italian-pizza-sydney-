@@ -12,12 +12,15 @@ import {CARD} from '../data/interface'
 function Card({title, price ,entre, main ,dessert,special}:CARD) {
 
   return (
-    <div className={` ${teko.className}  ${special==true ? "cardSpecial ribbon":"cardContainer"}   `}>
-    {special&& <> 
+    <div className={` ${teko.className}  ${special==true ? "cardSpecial ribbon":"cardContainer ribbon"}   `}>
+   
       <div className="wrap">
-        <span className="ribbon6">Limited</span>
+ {special == true?
+        <span className="ribbon6">Limited</span> :
+        <span className="ribbon6 font-small">Pizza all  you can eat</span>
+          }
       </div>
-     </> }
+    
         
         <h1 className='titleCard'>{ special == true?'Special Pack' : title}</h1>
         <div className='C-Sec'>

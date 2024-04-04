@@ -4,12 +4,16 @@
   width: 22rem;
   position: relative;
 //   margin-bottom: 30px;
-//   background: url(https://html5book.ru/wp-content/uploads/2015/10/snow-road.jpg);
+  // background: url(https://html5book.ru/wp-content/uploads/2015/10/snow-road.jpg);
   background-size: cover;
   text-transform: uppercase;
   font-size: x-large;
 //   color: white;
 } 
+.font-small{
+  font-size: .95rem;
+  color:  white;
+}
 
 .wrap {
     width: 100%;

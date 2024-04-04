@@ -25,10 +25,10 @@ function WrappedPackages ( data:DATA ) {
     const [size,width,isClick] = useSize()
     const dispatch = useDispatch()
 
-    useEffect(()=>{
-      dispatch(updatePack(isPack))
+    // useEffect(()=>{
+    //   dispatch(updatePack(isPack))
       
-    },[])
+    // },[])
 
     console.log(isPack)
     
