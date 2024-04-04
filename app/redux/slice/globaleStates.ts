@@ -8,8 +8,10 @@ interface GLOBALSTATES {
 
 const initialState:GLOBALSTATES = {
     isPack : false,
-    isEvent : true,
+    isEvent : false,
 }
+
+
 
 export const sizeManager = createSlice({
    name:'globalState',

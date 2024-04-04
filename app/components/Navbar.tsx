@@ -27,15 +27,20 @@ const teko = Teko({
 });
 
 
-function Navbar() {
+function Navbar({data}:any) {
     // const [isClick,setIsClick] = useState(false)
     // const [width,setWidth] = useState(0)
     // const [notify,setNotify] = useState(true)
     // const size = useSelector((state:RootState) =>state.size.value)
-    const  notify = useSelector((state:RootState) => state.globaleStates.isPack )
+  //  console.log(data[0])
+
+    const  notify = useSelector((state:RootState) => state.globaleStates.isPack) // global state pack
     const dispatch = useDispatch()
     const [size,isClick,setIsClick] = useSize()
 
+useEffect(()=>{
+  dispatch(updatePack(data[0]))
+})
 
     const IconNotify = (style:string)=>{
           return(

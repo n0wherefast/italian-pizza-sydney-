@@ -20,18 +20,19 @@ import { updatePack } from '@/app/redux/slice/globaleStates';
 function WrappedPackages ( data:DATA ) {
     const {dataPack} = data.data
     const {title,isPack,dessert,main,entre,price}:PACKAGES = data.data.dataSpecialPack[0]
-    
+    const  globalStatePack = useSelector((state:RootState) => state.globaleStates.isPack)
+
     
     const [size,width,isClick] = useSize()
     const dispatch = useDispatch()
 
-    // useEffect(()=>{
-    //   dispatch(updatePack(isPack))
+    useEffect(()=>{
+      dispatch(updatePack(isPack))
       
-    // },[])
+    })
 
-    console.log(isPack)
-    
+  
+    console.log(globalStatePack)
 
 
 
@@ -85,7 +86,7 @@ function WrappedPackages ( data:DATA ) {
          </div>    
     }
  {
-  isPack == true?<Card title={title} price={price}  entre={entre} main={main} dessert={dessert} special={isPack} /> : null
+  globalStatePack == true? <Card title={title} price={price}  entre={entre} main={main} dessert={dessert} special={isPack} /> : null
  }
     
 </div>   
