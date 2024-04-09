@@ -8,7 +8,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss';
 import 'swiper/scss/effect-coverflow';
 import 'swiper/scss/pagination';
-// import '../../pages/packages/pack.scss'
 import { EffectCoverflow, Pagination ,Autoplay} from 'swiper/modules';
 
 import { useSelector,useDispatch } from 'react-redux';
@@ -26,13 +25,13 @@ function WrappedPackages ( data:DATA ) {
     const [size,width,isClick] = useSize()
     const dispatch = useDispatch()
 
-    useEffect(()=>{
-      dispatch(updatePack(isPack))
+    // useEffect(()=>{
+    //   dispatch(updatePack(globalStatePack))
       
-    })
+    // },[])
 
   
-    console.log(globalStatePack)
+    // console.log(globalStatePack)
 
 
 
@@ -86,7 +85,7 @@ function WrappedPackages ( data:DATA ) {
          </div>    
     }
  {
-  globalStatePack == true? <Card title={title} price={price}  entre={entre} main={main} dessert={dessert} special={isPack} /> : null
+  globalStatePack == true? <Card title={title} price={price}  entre={entre} main={main} dessert={dessert} special={globalStatePack} /> : null
  }
     
 </div>   

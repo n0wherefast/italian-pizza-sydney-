@@ -26,10 +26,7 @@ export const metadata: Metadata = {
 }
 
 
-const querySpecialPack =`
-*[_type=='special_pack'] | order(_createdAT desc){
- isPack,
-}`;
+const querySpecialPack =`*[_type=='special_pack']`;
 
 
 async function getData(query:string) {
@@ -40,8 +37,7 @@ return data;
 export default async function RootLayout({children,}: Readonly<{ children: React.ReactNode;}>) {
 
   const dataPack = await getData(querySpecialPack)
-  // console.log(dataPack)
-
+console.log(dataPack[0].isPack)
 
   return (
     <html lang="en">

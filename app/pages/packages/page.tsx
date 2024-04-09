@@ -10,7 +10,7 @@ import WrappedPackages from '@/app/components/wrapped/WrappedPackages';
   }`;
   const querySpecialPack =`
   *[_type=='special_pack'] | order(_createdAT desc){
-    title,price,entre,main,dessert,isPack,
+    title,price,entre,main,dessert 
   }`;
 
 

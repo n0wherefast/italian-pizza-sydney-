@@ -29,7 +29,6 @@ function HomePage() {
 
   const isEvent = useSelector((state:RootState) =>state.globaleStates.isEvent)
 
-  // console.log(isEvent)
   return (
     // <div className='mainHome'>
       <div className='  homeContainer '>

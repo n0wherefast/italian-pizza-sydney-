@@ -32,38 +32,22 @@ function Navbar({data}:any) {
     // const [width,setWidth] = useState(0)
     // const [notify,setNotify] = useState(true)
     // const size = useSelector((state:RootState) =>state.size.value)
-  //  console.log(data[0])
+  //  console.log(data[0].isPack)
 
     const  notify = useSelector((state:RootState) => state.globaleStates.isPack) // global state pack
     const dispatch = useDispatch()
     const [size,isClick,setIsClick] = useSize()
 
 useEffect(()=>{
-  dispatch(updatePack(data[0]))
+  dispatch(updatePack(data[0].isPack))
 })
+
 
     const IconNotify = (style:string)=>{
           return(
              <div className={`${teko.className} ${style}`} >New</div>
           )      
      }
-
-    // useEffect(() => {
-
-    //     function handleResize() {
-    //       setWidth(size)
-    //       if(size > 800 || size < 500){
-    //         setIsClick(false)
-    //       } 
-    //     }
-
-    //     dispatch(updateValue(window.innerWidth))
-    //     window.addEventListener('resize', handleResize);
-    
-    //     return () => {
-    //       window.removeEventListener('resize', handleResize);
-    //     };
-    //   });
       
   return (
       <nav className={` ${teko.className}  ${isClick=== true? 'mobileopened transition' :'navbarCont'} `} >

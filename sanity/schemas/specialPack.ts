@@ -45,7 +45,8 @@ export default {
                     type:'block',
                 }
             ]
-        },{
+        },
+        {
             name:'isPack',
             title:'set special pack visible',
             type:'boolean'
