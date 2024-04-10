@@ -7,7 +7,7 @@ import { client } from '@/app/data/sanity'
 async function getData(){
     const query = `
     *[_type=='event'] | order(_createdAT desc){
-        title,image,place,date,description,isEvent
+        title,image,place,date,description
       }
     `
     const data = await client.fetch(query)

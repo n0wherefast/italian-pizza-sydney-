@@ -39,7 +39,7 @@ export default async function RootLayout({children,}: Readonly<{ children: React
 
   const dataPack = await getData(querySpecialPack)
   const dataEvent = await getData(queryEvent)
-// console.log(dataEvent[0].isEvent)
+console.log(dataEvent[0].isEvent)
 
   return (
     <html lang="en">

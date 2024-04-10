@@ -12,7 +12,7 @@ import { Libre_Franklin,Teko} from 'next/font/google'
 import { useSelector,useDispatch } from 'react-redux';
 import { RootState } from '../redux/store';
 import { updateValue } from '../redux/slice/sizeManager';
-import { updatePack } from '../redux/slice/globaleStates';
+import { updatePack,updateEvent } from '../redux/slice/globaleStates';
 
 import useSize from '../hooks/useSize';
 
@@ -40,7 +40,7 @@ function Navbar({data}:any) {
 
 useEffect(()=>{
   dispatch(updatePack(dataPack[0].isPack))
-  dispatch(updatePack(dataEvent[0].isEvent))
+  dispatch(updateEvent(dataEvent[0].isEvent))
 })
 
 // console.log(dataEvent[0].isEvent)

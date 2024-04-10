@@ -6,14 +6,15 @@ import { updateValue } from '../../redux/slice/sizeManager';
 import { updateEvent } from '@/app/redux/slice/globaleStates';
 
 function EventWrapped(data:any) {
-    const {title,image,place,date,description,isEvent} = data.data[0]
+    const {title,image,place,date,description} = data.data[0]
+    const  globalStateEvent = useSelector((state:RootState) => state.globaleStates.isEvent)
 
-    const dispatch = useDispatch()
-     dispatch(updateEvent(isEvent))
-    //  console.log(isEvent)
+
+   
+     console.log(globalStateEvent)
   return (
 <>
-    { isEvent == true ? 
+    { globalStateEvent == true ? 
     <div className='mainEvent'>
         <div className='titleEvent'>{title}</div>
         <div className="imageEvent"></div>
