@@ -6,7 +6,7 @@ import ReduxProvider from "./redux/Provider";
 import { client } from "./data/sanity";
 
 const inter = Inter({ subsets: ["latin"] });
-
+export const revalidate = 30 //revalidate at 30 seconds
 
 export const metadata: Metadata = {
   title: {

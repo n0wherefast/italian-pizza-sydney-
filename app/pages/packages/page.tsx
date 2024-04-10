@@ -3,6 +3,7 @@ import { client } from '@/app/data/sanity';
 import React from 'react'
 import './pack.scss'
 import WrappedPackages from '@/app/components/wrapped/WrappedPackages';
+export const revalidate = 30 //revalidate at 30 seconds
 
  const queryPack =`
   *[_type=='packages'] | order(_createdAT desc){
