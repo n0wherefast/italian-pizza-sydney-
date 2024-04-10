@@ -3,6 +3,8 @@ import './event.scss'
 import Image from 'next/image'
 import EventWrapped from '@/app/components/wrapped/EventWrapped'
 import { client } from '@/app/data/sanity'
+export const revalidate = 30 //revalidate at 30 seconds
+
 
 async function getData(){
     const query = `
