@@ -32,16 +32,19 @@ function Navbar({data}:any) {
     // const [width,setWidth] = useState(0)
     // const [notify,setNotify] = useState(true)
     // const size = useSelector((state:RootState) =>state.size.value)
-  //  console.log(data[0].isPack)
 
+    const{dataEvent,dataPack} = data
     const  notify = useSelector((state:RootState) => state.globaleStates.isPack) // global state pack
     const dispatch = useDispatch()
     const [size,isClick,setIsClick] = useSize()
 
 useEffect(()=>{
-  dispatch(updatePack(data[0].isPack))
+  dispatch(updatePack(dataPack[0].isPack))
+  dispatch(updatePack(dataEvent[0].isEvent))
 })
 
+// console.log(dataEvent[0].isEvent)
+// console.log(dataPack[0].isPack)
 
     const IconNotify = (style:string)=>{
           return(

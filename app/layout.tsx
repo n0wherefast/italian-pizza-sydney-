@@ -27,6 +27,7 @@ export const metadata: Metadata = {
 
 
 const querySpecialPack =`*[_type=='special_pack']`;
+const queryEvent =`*[_type=='event']`;
 
 
 async function getData(query:string) {
@@ -37,13 +38,14 @@ return data;
 export default async function RootLayout({children,}: Readonly<{ children: React.ReactNode;}>) {
 
   const dataPack = await getData(querySpecialPack)
-console.log(dataPack[0].isPack)
+  const dataEvent = await getData(queryEvent)
+// console.log(dataEvent[0].isEvent)
 
   return (
     <html lang="en">
       <body className={`  ${inter.className}` } >
         <ReduxProvider>
-          <Navbar data={dataPack}/>
+          <Navbar data={{dataPack, dataEvent}}/>
           <div className="w-full bg-zinc-900 ">
             {children}
           </div>
