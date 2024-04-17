@@ -39,11 +39,12 @@ h1{
     width: 90%;
     margin: .5rem;
     font-size: 1.1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
-.image{
-    background-color: red;
-    margin: 1rem;
+.imageAbout{
+    object-fit: cover;
     width: 20rem;
     height: 15rem;
 }

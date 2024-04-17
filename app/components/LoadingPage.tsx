@@ -1,7 +1,7 @@
 import React from 'react'
 import '../style/loading.scss'
 import Image from 'next/image'
-import pizza from '../assets/pizzaPixel.png'
+import pizza from '../assets/pizzaPixel.webp'
 
 function LoadingPage() {
   return (
