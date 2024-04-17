@@ -12,7 +12,7 @@ import { useSelector,useDispatch } from 'react-redux';
 import { RootState } from '../../redux/store';
 import { updateValue } from '../../redux/slice/sizeManager';
 import { motion} from 'framer-motion'
-import { variantX ,variantY,variantXleft} from '@/app/data/variants';
+import { variantX ,variantY} from '@/app/data/variants';
 
 const titan = Titan_One({
   subsets: ["latin"],
@@ -26,10 +26,16 @@ const libre = Libre_Franklin({
   subsets: ["latin"],
   weight: '800'
 });
+// interface DELAY {
+//   delay:any,
+//   delayP:any,
+//   delayPP:any
+// }
 
 function HomePage() {
 
   const isEvent = useSelector((state:RootState) =>state.globaleStates.isEvent)
+  
 
   return (
     // <div className='mainHome'>
@@ -37,15 +43,15 @@ function HomePage() {
               <Image priority src={pizzaPixel} alt='pizzaPixel' className='pizzaPixel' />
 
         <div className= {`  homeTit clip-text`} >
-          <motion.p variants={variantX} initial='start' whileInView='end' transition={{delay:0.25}} className='title-text'> Italian  </motion.p>
-          <motion.p variants={variantX} initial='start' whileInView='end' transition={{delay:0.35}}  className='title-text'>Pizza </motion.p>
-          <motion.p variants={variantX} initial='start' whileInView='end' transition={{delay:0.45}} className='title-text'>Sydney </motion.p>
+          <motion.p variants={variantX} initial='start' whileInView='end'  className='title-Home'> Italian  </motion.p>
+          <motion.p variants={variantX} initial='start' whileInView='end'   className='title-Home'>Pizza </motion.p>
+          <motion.p variants={variantX} initial='start' whileInView='end'  className='title-Home'>Sydney </motion.p>
         </div>
 
         
 
 
-  <motion.div variants={variantY} initial='start' whileInView='end' transition={{delay:0.25}} className='homeCard'>
+  <motion.div variants={variantY } initial='start' whileInView='end'  className='homeCard'>
           <div className='cardSection'>
             <Image priority src={IPS} alt='image' className='IPSImage' />
             <div className='textCard'>Welcome! i&apos;m here to bring a taste of Italy  directly to your place!</div>

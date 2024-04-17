@@ -20,7 +20,7 @@ function WrappedAbout() {
                   variants={variantY}
                   initial='start'
                   whileInView='end'
-                  transition={{delay:0.25}}
+                 
                   className='text'> 
                     My name is Alessandro and I&apos;m from Sicily. I started this job when I was a kid with a lot of passion and sacrificies. Now I&apos;m here to bring a taste of Italy directly to your place
                     We offer authentic
@@ -29,7 +29,7 @@ function WrappedAbout() {
                     We are here to make your day special such as birthday, family gather, teambonding, wedding etc.
                 </motion.div>
                 
-            <motion.div  variants={variantX} initial="start" whileInView="end" transition={{delay:0.25}}>
+            <motion.div  variants={variantX} initial="start" whileInView="end">
                <Image src={alePic} alt='' className='imageAbout'/>
             </motion.div>
         </div>
@@ -42,7 +42,7 @@ function WrappedAbout() {
 
 
         <div className='mid-sections'>
-        <motion.div  variants={variantX} initial="start" whileInView="end" transition={{delay:0.25}}>
+        <motion.div  variants={variantX} initial="start" whileInView="end">
           <Image src={TruckPic} alt='' className='imageAbout'/>
         </motion.div> 
 

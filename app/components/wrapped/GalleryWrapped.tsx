@@ -18,7 +18,7 @@ function GalleryWrapped({data}:any) {
     <div className='colGal'>
       {photosOne.map((pic:any , index:number)=>{
         return(
-          <motion.div key={pic.id} variants={variantX} initial="start" whileInView="end" transition={{delay:0.25}}>
+          <motion.div key={pic.id} variants={variantX} initial="start" whileInView="end">
                 <Image
                 priority 
                 //  onClick={()=>setClick(!click)} 

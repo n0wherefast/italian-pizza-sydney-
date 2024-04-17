@@ -11,7 +11,7 @@ function EventWrapped(data:any) {
 
 
    
-     console.log(globalStateEvent)
+    //  console.log(globalStateEvent)
   return (
 <>
     { globalStateEvent == true ? 
