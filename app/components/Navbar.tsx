@@ -70,7 +70,7 @@ useEffect(()=>{
                       return(
                         <Link key={id} href={path} className='links' onClick={()=> setIsClick(false)}>
                             <li className='transition' 
-                          >{name} { notify === true? news&& IconNotify('notify') : null } </li>
+                          >{name} { notify === true? news&& IconNotify('notify pulse') : null } </li>
                         </Link> 
                       )
                   })

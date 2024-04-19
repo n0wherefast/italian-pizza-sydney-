@@ -7,6 +7,7 @@ import alePic from '../../assets/italian pizza sydney20.webp'
 import TruckPic from '../../assets/italian pizza sydney27.webp'
 import { motion} from 'framer-motion'
 import { variantX ,variantY} from '@/app/data/variants';
+import Link from 'next/link';
 
 function WrappedAbout() {
     
@@ -48,11 +49,18 @@ function WrappedAbout() {
 
             <div className="socialCont">
                 <div className='Social'>
+                    <Link href={'https://www.facebook.com/profile.php?id=100088427027910'}>
                     <SlSocialFacebook/>
-                    <SlSocialInstagram/>  
+                    </Link>
+                    <Link href={'https://www.instagram.com/italianpizzasyd?igsh=NmxsOGVmeWQ2dXVv'}>
+                    <SlSocialInstagram/> 
+                    </Link> 
                 </div>
                 <div className='Social'>
-                    <FaWhatsapp/>
+                    <Link href={''}>
+                     <FaWhatsapp/>
+                    </Link>
+                   
             </div>
             </div>
         </div>

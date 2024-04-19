@@ -11,6 +11,8 @@
     width: 100vw;
     height: 92.8vh;
     gap: 1rem;
+ 
+
    
     @include res.min-md   {
         justify-content: center;
@@ -52,6 +54,9 @@
   }
   .btnHome{
     background-color: global.$basil;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     border-radius:5px;
     color: white;
@@ -85,13 +90,15 @@
   .event{
     background-color: transparent;
     border-radius: 8px;
-    border: 1px solid white;
+    // border: 1px solid white;
     padding: .5rem;
     margin-right: 3rem;
     font-size: x-large;
     font-weight: 800;
     color: white;
   }
+
+  
   .textCard{
     flex: 20;
     margin: .8rem;
@@ -120,14 +127,14 @@
 
 .homeTit{
     display: flex;
-    gap: 0rem;
     flex-direction: column;
     padding-left: .5rem;
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    gap: 1rem;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+    // gap: 1rem;
 
     @include res.min-sm{
       margin-top: 6rem;
@@ -141,7 +148,7 @@
     }
     @include res.min-lg {
        padding-top: 6rem;
-       font-size: 13vw;
+       font-size: 19vw;
        background-color: green;
 
     }
@@ -221,7 +228,7 @@
 
   @include res.max-sm{
     .pizzaPixel{
-      left: 70%;
+      left: 76%;
       width: 12rem;
       height: 12rem;
     }
@@ -256,7 +263,7 @@
   }
   @include res.min-lg{
     .pizzaPixel{
-      left: 75%;
+      left: 81%;
       width: 25rem;
       height: 25rem;
       
