@@ -106,10 +106,10 @@
       padding-left: 1rem;
       margin: 1rem;
     }@include res.min-md{
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       margin: 1rem;
     }@include res.min-lg{
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       margin: 1.5rem;
     }
     @include res.min-xl{
@@ -250,6 +250,7 @@
       margin-top: 5rem;
       width: 35rem;
       height: 20rem;
+      
     }
    
   }
@@ -258,11 +259,13 @@
       left: 75%;
       width: 25rem;
       height: 25rem;
+      
     }   
     .homeCard{ 
       margin-top: 0px;
       width: 35rem;
       height: 20rem;
+      
     }
   }
   @include res.min-xl {

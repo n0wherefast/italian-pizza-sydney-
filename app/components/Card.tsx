@@ -21,7 +21,6 @@ function Card({title, price ,entre, main ,dessert,special}:CARD) {
           }
       </div>
     
-        
         <h1 className='titleCard'>{ special == true?'Special Pack' : title}</h1>
         <div className='C-Sec'>
             <p className='textXL'>Entre</p><p>{entre}</p>

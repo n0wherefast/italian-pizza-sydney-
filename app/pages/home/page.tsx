@@ -13,6 +13,7 @@ import { RootState } from '../../redux/store';
 import { updateValue } from '../../redux/slice/sizeManager';
 import { motion} from 'framer-motion'
 import { variantX ,variantY} from '@/app/data/variants';
+import useSize from '@/app/hooks/useSize'
 
 const titan = Titan_One({
   subsets: ["latin"],
@@ -35,17 +36,28 @@ const libre = Libre_Franklin({
 function HomePage() {
 
   const isEvent = useSelector((state:RootState) =>state.globaleStates.isEvent)
-  
+  const [size] = useSize()
 
   return (
     // <div className='mainHome'>
       <div className='  homeContainer '>
               <Image priority src={pizzaPixel} alt='pizzaPixel' className='pizzaPixel' />
 
-        <div className= {`  homeTit clip-text`} >
+        <div className= {`  homeTit  clip-text`} > 
+        {size < 760 ? 
+        <>
           <motion.p variants={variantX} initial='start' whileInView='end'  className='title-Home'> Italian  </motion.p>
           <motion.p variants={variantX} initial='start' whileInView='end'   className='title-Home'>Pizza </motion.p>
           <motion.p variants={variantX} initial='start' whileInView='end'  className='title-Home'>Sydney </motion.p>
+        </> 
+          :
+        <>
+          <p className='title-Home'> Italian  </p>
+          <p className='title-Home'>Pizza </p>
+          <p className='title-Home'>Sydney </p>
+        </>
+        }
+          
         </div>
 
         
@@ -66,7 +78,7 @@ function HomePage() {
               </Link> : null
             }
           </div>
-        </motion.div>
+    </motion.div>
 
          
       </div>
