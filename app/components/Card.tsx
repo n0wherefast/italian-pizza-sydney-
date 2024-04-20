@@ -31,7 +31,8 @@ function Card({title, price ,entre, main ,dessert,special}:CARD) {
         <div className='C-Sec'>
             <p className=' textXL'>Dessert</p><p>{dessert}</p>
         </div>
-        <div className='C-price '>{price}</div>
+        <div className='C-price '>{price} </div>
+        <div>waiter available for 200$ extra</div>
     </div>
   )
 }

@@ -49,18 +49,17 @@ function WrappedAbout() {
 
             <div className="socialCont">
                 <div className='Social'>
-                    <Link href={'https://www.facebook.com/profile.php?id=100088427027910'}>
+                    <Link className='FB' href={'https://www.facebook.com/profile.php?id=100088427027910'}>
                     <SlSocialFacebook/>
                     </Link>
-                    <Link href={'https://www.instagram.com/italianpizzasyd?igsh=NmxsOGVmeWQ2dXVv'}>
+                    <Link className='IG' href={'https://www.instagram.com/italianpizzasyd?igsh=NmxsOGVmeWQ2dXVv'}>
                     <SlSocialInstagram/> 
                     </Link> 
                 </div>
                 <div className='Social'>
-                    <Link href={''}>
-                     <FaWhatsapp/>
+                    <Link className='WA' href={''}>
+                      <FaWhatsapp/>
                     </Link>
-                   
             </div>
             </div>
         </div>

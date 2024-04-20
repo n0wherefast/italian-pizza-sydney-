@@ -27,7 +27,7 @@ h1{
     margin: auto;
     padding-top: 5rem;
     padding-bottom: 40px;
-    
+
    .sections, .mid-sections{
     display: flex;
     flex-direction: column;
@@ -73,6 +73,7 @@ h1{
     display: flex;
     font-size: xx-large;
     gap:1rem;
+    color: black;
  
 }
 .Contact{
@@ -121,7 +122,15 @@ h1{
 }
 .Social{
     font-size: 2.5rem;
-
+}
+.WA{
+  color: green;
+}
+.FB{
+  color: blue;
+}
+.IG{
+  color:rgb(233, 55, 114);
 }
 .Contact{
   width: 80%;
