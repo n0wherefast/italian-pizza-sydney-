@@ -58,7 +58,7 @@ useEffect(()=>{
           {/* <Image className='logo' src={logo} width={55} height={55} alt='logo'/> */}
             <div className='title'>Italian Pizza  Sydney</div>
             <div className={`${ isClick&& 'rotate transition'}`} onClick={()=> setIsClick(!isClick)}>
-             { isClick===false?  size >805  ? null  :notify&& IconNotify('notifyMenuClosed') : null}
+             { isClick===false?  size >805  ? null  :notify&& IconNotify('notifyMenuClosed pulse') : null}
                   {isClick === false ?<BiMenuAltRight  size={35} className='menuMobile transition '/>
                     : <IoMdClose className='menuMobile transition'/> }
             </div> 
