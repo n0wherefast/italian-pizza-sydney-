@@ -2,15 +2,17 @@
 
 .blur{
     backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.6);
+
 
 }
 .PrivacyConteiner{
-    width: 90vw;
-    height: auto;
-    background-color:white;
+    width: 20rem;
+    height: 10rem;
+    // background-color:white;
     z-index: 100;
     position: fixed;
-    top: 65%;
+    top: 75%;
     left: 5%;
     display: flex;
     flex-direction: column;

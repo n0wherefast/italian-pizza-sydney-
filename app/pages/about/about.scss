@@ -27,8 +27,8 @@ h1{
     margin: auto;
     padding-top: 5rem;
     padding-bottom: 40px;
-}
-.sections, .mid-sections{
+    
+   .sections, .mid-sections{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,4 +126,5 @@ h1{
 .Contact{
   width: 80%;
 }
-  }
+  } 
+}
