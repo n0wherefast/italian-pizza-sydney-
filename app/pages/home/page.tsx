@@ -45,10 +45,10 @@ function HomePage() {
               <Image priority src={pizzaSlice} alt='pizzaSlice' className='pizzaSlice bouncex' />
 
     <div className='Title-container'>
-      <div className='woodfired'>
+      <motion.div variants={variantY} initial='start' whileInView='end' className='woodfired'>
         <p >Wood </p>
         <p > Fired</p>
-      </div>
+      </motion.div>
       <div className= {`  homeTit `} > 
             {size < 760 ? 
             <>
@@ -64,12 +64,13 @@ function HomePage() {
             </>
             }
       </div>
-      <div className='home-description'>
+      <motion.div variants={variantY} initial='start' whileInView='end' className='home-description'>
         <p>
           In our truck we make an italian tradional pizza.
           We specialize in handcraft wood fired pizzas made with fresh ingredients.
         </p>
-      </div>
+        <Link className='home-btn-menu' href="/pages/menu">Our menu</Link>
+      </motion.div>
     </div>
 
         <motion.div  className='circle-cont'>
@@ -85,7 +86,7 @@ function HomePage() {
             <div className='textCard'>Welcome! i&apos;m here to bring a taste of Italy  directly to your place!</div>
           </div>
           <div className="cardSection">
-            <Link href={''} className='btnHome'>Order Now 🍕</Link>
+            <Link href={'https://wa.me/qr/WEOOT3HPLJOVG1'} className='btnHome'>Order Now 🍕</Link>
             {
                 isEvent == true ?  
                 <Link href={'/pages/event'} className="event pulse ">

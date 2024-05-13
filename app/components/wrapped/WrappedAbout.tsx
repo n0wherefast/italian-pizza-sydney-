@@ -57,7 +57,7 @@ function WrappedAbout() {
                     </Link> 
                 </div>
                 <div className='Social'>
-                    <Link className='WA' href={''}>
+                    <Link className='WA' href={'https://wa.me/qr/WEOOT3HPLJOVG1 '}>
                       <FaWhatsapp/>
                     </Link>
             </div>
