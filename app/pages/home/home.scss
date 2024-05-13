@@ -31,6 +31,22 @@
     @include res.min-xl{
       flex-direction: row;
     }
+    .circle-cont{
+      width: 100%;
+      // min-height: 10rem;
+    
+    }
+
+    .circle{
+       background-color: global.$redOne;  
+      border-radius: 100%;
+      position: fixed;
+      // z-index: 10;
+      top: -5rem;
+      left: 15%;
+      width: 34rem;
+      height: 34rem;
+    }
     
   }
   .homeCard{
@@ -124,40 +140,98 @@
       margin: 1rem;
     }
   }
-
-.homeTit{
+  .Title-container{
+    z-index: 10;
+    width: 100%;
+    min-height:15rem ;
     display: flex;
     flex-direction: column;
-    padding-left: .5rem;
-    font-size: 4rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    justify-content: end;
+    align-items: start;
+    // background-color: antiquewhite;
     margin-top: 3rem;
-    // gap: 1rem;
-
-    @include res.min-sm{
-      margin-top: 6rem;
-      font-size: 4rem;
+    .woodfired{
+      font-size: 2.5rem;
+      font-weight: 700;
+      padding-left:0.5rem;
+      letter-spacing: 0.5rem;
+      display: flex;
+      flex-direction: column;
+       :nth-child(1){
+        color: global.$basil;
+       }
+      p{
+        color: global.$basil;
+      }
+     
     }
-    
-    @include res.min-md {
+    .home-description{
+      margin-top: 1rem;
+      padding:0.5rem;
+      font-size: larger;
+      font-weight: 600;
+    }
+  .homeTit{
+    // background-color: aqua;
+      display: flex;
+      flex-direction: row;
+      padding-left: .5rem;
+      font-size: 2.5rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      // margin-top: 3rem;
+      z-index: 10;
+      gap: 1rem;
+      color: white;
+      :nth-child(1){
+        color: global.$basil;
+      }
+
+      @include res.min-sm{
+        margin-top: 6rem;
+        font-size: 4rem;
+      }
+      
+      @include res.min-md {
+          padding-left: 2rem;
+          font-size: 12vw;
+          // background-color: aqua;
+      }
+      @include res.min-lg {
+        padding-top: 6rem;
+        font-size: 19vw;
+        background-color: green;
+
+      }
+      @include res.min-xl{
         padding-left: 2rem;
-        font-size: 12vw;
-        // background-color: aqua;
-    }
-    @include res.min-lg {
-       padding-top: 6rem;
-       font-size: 19vw;
-       background-color: green;
+          margin-top: -1rem;
+          font-size: 12vw;
+      }
+  }
+  }
+  .text-shadow{
+    color: global.$redOne;
+    text-shadow: 3px 3px 1px white;  
+  }
+.clip-text {
+          
+    @include res.min-lg   {
+       color: transparent;
+       text-shadow: none;
+    @supports (background-clip:text) or (-webkit-background-clip:text) {       
+      background-clip: text;
+      -webkit-background-clip: text;
+      // background-image: url(../../assets/pizzaOne.png);
+       }
+      background-size: cover;
+      background-image: url(https://media.giphy.com/media/3osxY7nhAHq7gOBIiY/giphy.gif);
+     }
 
-    }
-    @include res.min-xl{
-       padding-left: 2rem;
-        margin-top: -1rem;
-        font-size: 12vw;
-    }
-}
+    
+  }
+
 .title-Home{
     display: block;
     // flex-direction: row;
@@ -194,43 +268,25 @@
 }
 
 
-.pizzaPixel{
+.pizzaSlice{
   //mobile first//
   position: fixed;
   z-index: 50;
-  top: 1rem;
-  left: 80%;
-  width: 12rem;
-  height: 12rem;
-  rotate: 45deg;
+  top: 6rem;
+  left: 70%;
+  width: 8rem;
+  height: 8rem;
+  // rotate: 45deg;
 }
 
-.clip-text {
-       color: global.$redOne;
-       text-shadow: 3px 3px 1px global.$basil;  
-      ;
-   
-    @include res.min-lg   {
-       color: transparent;
-       text-shadow: none;
-    @supports (background-clip:text) or (-webkit-background-clip:text) {       
-      background-clip: text;
-      -webkit-background-clip: text;
-      // background-image: url(../../assets/pizzaOne.png);
-       }
-      background-size: cover;
-      background-image: url(https://media.giphy.com/media/3osxY7nhAHq7gOBIiY/giphy.gif);
-     }
 
-    
-  }
   
 
   @include res.max-sm{
-    .pizzaPixel{
-      left: 76%;
-      width: 12rem;
-      height: 12rem;
+    .pizzaSlice{
+      left: 65%;
+      width: 8rem;
+      height: 8rem;
     }
      .homeCard{
       width: 22rem;
@@ -248,8 +304,8 @@
   }
   
   @include res.min-md {
-    .pizzaPixel{
-      left: 70%;
+    .pizzaSlice{
+      left: 50%;
       width: 20rem;
       height: 20rem;
     }  
@@ -262,10 +318,10 @@
    
   }
   @include res.min-lg{
-    .pizzaPixel{
-      left: 81%;
-      width: 25rem;
-      height: 25rem;
+    .pizzaSlice{
+      left: 70%;
+      width: 15rem;
+      height: 15rem;
       
     }   
     .homeCard{ 
@@ -276,10 +332,10 @@
     }
   }
   @include res.min-xl {
-    .pizzaPixel{
-      left: 87%;
-      width: 25rem;
-      height: 25rem;
+    .pizzaSlice{
+      left: 75%;
+      width: 20rem;
+      height: 20rem;
     }
    .homeCard{ 
       width: 35rem;

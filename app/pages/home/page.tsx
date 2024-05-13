@@ -6,6 +6,7 @@ import { Titan_One ,Wix_Madefor_Text,Libre_Franklin,Teko} from 'next/font/google
 import './home.scss'
 import IPS from '../../assets/pizzaTruck.webp'
 import pizzaPixel from '../../assets/pizzaPixel.webp'
+import pizzaSlice from '../../assets/pizzaSlice.webp'
 import { MdArrowOutward } from "react-icons/md";
 import Link from 'next/link'
 import { useSelector,useDispatch } from 'react-redux';
@@ -41,24 +42,39 @@ function HomePage() {
   return (
     // <div className='mainHome'>
       <div className='  homeContainer '>
-              <Image priority src={pizzaPixel} alt='pizzaPixel' className='pizzaPixel' />
+              <Image priority src={pizzaSlice} alt='pizzaSlice' className='pizzaSlice bouncex' />
 
-        <div className= {`  homeTit  clip-text`} > 
-        {size < 760 ? 
-        <>
-          <motion.p variants={variantX} initial='start' whileInView='end'  className='title-Home'> Italian  </motion.p>
-          <motion.p variants={variantX} initial='start' whileInView='end'   className='title-Home'>Pizza </motion.p>
-          <motion.p variants={variantX} initial='start' whileInView='end'  className='title-Home'>Sydney </motion.p>
-        </> 
-          :
-        <>
-          <p className='title-Home'> Italian  </p>
-          <p className='title-Home'>Pizza </p>
-          <p className='title-Home'>Sydney </p>
-        </>
-        }
-          
-        </div>
+    <div className='Title-container'>
+      <div className='woodfired'>
+        <p >Wood </p>
+        <p > Fired</p>
+      </div>
+      <div className= {`  homeTit `} > 
+            {size < 760 ? 
+            <>
+              <motion.p variants={variantX} initial='start' whileInView='end'  className='title-Home'> Italian  </motion.p>
+              <motion.p variants={variantX} initial='start' whileInView='end'   className='title-Home'>Pizza </motion.p>
+              {/* <motion.p variants={variantX} initial='start' whileInView='end'  className='title-Home'>Sydney </motion.p> */}
+            </> 
+              :
+            <>
+              <p className='title-Home'> Italian  </p>
+              <p className='title-Home'>Pizza </p>
+              {/* <p className='title-Home'>Sydney </p> */}
+            </>
+            }
+      </div>
+      <div className='home-description'>
+        <p>
+          In our truck we make an italian tradional pizza.
+          We specialize in handcraft wood fired pizzas made with fresh ingredients.
+        </p>
+      </div>
+    </div>
+
+        <motion.div  className='circle-cont'>
+          <div className='circle'/>
+        </motion.div>
 
         
 
