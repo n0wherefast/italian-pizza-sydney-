@@ -44,38 +44,29 @@ function HomePage() {
       <div className='  homeContainer '>
               <Image priority src={pizzaSlice} alt='pizzaSlice' className='pizzaSlice bouncex' />
 
-    <div className='Title-container'>
-      <motion.div variants={variantY} initial='start' whileInView='end' className='woodfired'>
-        <p >Wood </p>
-        <p > Fired</p>
-      </motion.div>
-      <div className= {`  homeTit `} > 
-            {size < 760 ? 
-            <>
-              <motion.p variants={variantX} initial='start' whileInView='end'  className='title-Home'> Italian  </motion.p>
-              <motion.p variants={variantX} initial='start' whileInView='end'   className='title-Home'>Pizza </motion.p>
-              {/* <motion.p variants={variantX} initial='start' whileInView='end'  className='title-Home'>Sydney </motion.p> */}
-            </> 
-              :
-            <>
-              <p className='title-Home'> Italian  </p>
-              <p className='title-Home'>Pizza </p>
-              {/* <p className='title-Home'>Sydney </p> */}
-            </>
-            }
-      </div>
-      <motion.div variants={variantY} initial='start' whileInView='end' className='home-description'>
-        <p>
-          In our truck we make an italian tradional pizza.
-          We specialize in handcraft wood fired pizzas made with fresh ingredients.
-        </p>
-        <Link className='home-btn-menu' href="/pages/menu">Our menu</Link>
-      </motion.div>
-    </div>
+              <div className='Title-container'>
+                <motion.div variants={variantY} initial='start' whileInView='end' className='woodfired'>
+                  <p >Wood </p>
+                  <p > Fired</p>
+                </motion.div>
+                <div className= {`  homeTit `} > 
+                      <>
+                        <motion.p variants={variantX} initial='start' whileInView='end'  className='title-Home'> Italian  </motion.p>
+                        <motion.p variants={variantX} initial='start' whileInView='end'   className='title-Home'>Pizza </motion.p>
+                      </> 
+                </div>
+                <motion.div variants={variantY} initial='start' whileInView='end' className='home-description'>
+                  <p>
+                    In our truck we make an italian tradional pizza.
+                    We specialize in handcraft wood fired pizzas made with fresh ingredients.
+                  </p>
+                  <Link className='home-btn-menu' href="/pages/menu">Our menu</Link>
+                </motion.div>
+              </div>
 
-        <motion.div  className='circle-cont'>
-          <div className='circle'/>
-        </motion.div>
+              <motion.div  className='circle-cont'>
+                <div className='circle'/>
+              </motion.div>
 
         
 
@@ -94,7 +85,7 @@ function HomePage() {
                 <MdArrowOutward />
               </Link> : null
             }
-          </div>
+          </div> 
     </motion.div>
 
          
