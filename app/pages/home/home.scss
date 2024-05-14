@@ -5,7 +5,7 @@
 .homeContainer{
     display: flex;
     flex-direction: column;
-    // justify-content: space-around;
+    justify-content: space-between;
     // align-items: start;
     // padding-top: 3rem;
     width: 100vw;
@@ -19,7 +19,7 @@
         // height: 100vh;
     }
     @include res.min-lg   {
-        // justify-content: space-around;
+        justify-content: space-between;
         // gap: 0rem;
         // padding: 0px;
         // width: 100%;
@@ -74,23 +74,17 @@
       }
     }
     @include res.min-md { 
-      .homeCard{ 
         // margin-top: 5rem;
         // width: 35rem;
         // height: 20rem;
-      }
     }
     @include res.min-lg{ 
-      .homeCard{ 
         margin-top: 0px;
         width: 26rem;
         height: 14rem;
-      }
     }
     @include res.min-xl {
-     .homeCard{ 
-        // width: 35rem;
-      }
+          
     }
       .IPSImage{
         width: 55%;
