@@ -2,10 +2,9 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { Titan_One ,Wix_Madefor_Text,Libre_Franklin,Teko} from 'next/font/google'
 import './home.scss'
 import IPS from '../../assets/pizzaTruck.webp'
-import pizzaPixel from '../../assets/pizzaPixel.webp'
+// import pizzaPixel from '../../assets/pizzaPixel.webp'
 import pizzaSlice from '../../assets/pizzaSlice.webp'
 import { MdArrowOutward } from "react-icons/md";
 import Link from 'next/link'
@@ -16,23 +15,7 @@ import { motion} from 'framer-motion'
 import { variantX ,variantY} from '@/app/data/variants';
 import useSize from '@/app/hooks/useSize'
 
-const titan = Titan_One({
-  subsets: ["latin"],
-  weight: '400'
-});
-const racing = Wix_Madefor_Text({
-  subsets: ["latin"],
-  weight: '800'
-});
-const libre = Libre_Franklin({
-  subsets: ["latin"],
-  weight: '800'
-});
-// interface DELAY {
-//   delay:any,
-//   delayP:any,
-//   delayPP:any
-// }
+
 
 function HomePage() {
 
@@ -40,7 +23,7 @@ function HomePage() {
   const [size] = useSize()
 
   return (
-    // <div className='mainHome'>
+    <>
       <div className='  homeContainer '>
               <Image priority src={pizzaSlice} alt='pizzaSlice' className='pizzaSlice bouncex' />
 
@@ -50,10 +33,10 @@ function HomePage() {
                   <p > Fired</p>
                 </motion.div>
                 <div className= {`  homeTit `} > 
-                      <>
+                      
                         <motion.p variants={variantX} initial='start' whileInView='end'  className='title-Home'> Italian  </motion.p>
                         <motion.p variants={variantX} initial='start' whileInView='end'   className='title-Home'>Pizza </motion.p>
-                      </> 
+          
                 </div>
                 <motion.div variants={variantY} initial='start' whileInView='end' className='home-description'>
                   <p>
@@ -90,7 +73,7 @@ function HomePage() {
 
          
       </div>
-    // </div>
+   </>
   )
 }
 

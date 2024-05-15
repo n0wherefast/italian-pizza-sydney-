@@ -5,6 +5,7 @@
       margin: 0px;
     }
 
+
 body{
     background-color: global.$global-bg;
 }
@@ -13,7 +14,6 @@ ul{
     list-style-type:none;
     margin: 0px;
     padding: 0px;
-    
 }
 
 a {
@@ -21,7 +21,6 @@ a {
 }   
 .pulse{
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  
   @keyframes pulse {
     0%, 100% {
       opacity: 1;
@@ -31,13 +30,12 @@ a {
       opacity: 1;
       color: white;
     }
-}
+ }
 }
 
 
 .bouncex {
-  animation: bouncex 3s infinite;
-
+  animation: bouncex 3s infinite;  
 @keyframes bouncex {
         0%   { transform: translateY(0); }
         50%  { transform: translateY(-15px); }

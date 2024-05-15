@@ -8,7 +8,7 @@
     justify-content: space-between;
     // align-items: start;
     // padding-top: 3rem;
-    width: 100vw;
+    width: 100%;
     height:100%;
     // gap: 1rem;
    
@@ -19,7 +19,7 @@
         // height: 100vh;
     }
     @include res.min-lg   {
-        justify-content: space-between;
+        // justify-content: space-between;
         // gap: 0rem;
         // padding: 0px;
         // width: 100%;
@@ -34,8 +34,7 @@
       // min-height: 10rem;
     
     }
-
-    .circle{
+.circle{
        background-color: global.$redOne;  
       border-radius: 100%;
       position: fixed;
@@ -56,9 +55,8 @@
       @include res.min-xl{
        
       }
-    }
-    
-   .homeCard{
+    }    
+.homeCard{
     border-radius: 10px;
     background-color: global.$redOne;
     margin-left: 1rem;
@@ -162,7 +160,7 @@
   }
   
   
-  .Title-container{
+.Title-container{
     z-index: 20;
     width: 100%;
     min-height:15rem ;
@@ -172,111 +170,7 @@
     align-items: start;
     margin-top: 6rem;
     margin-bottom: 2rem;
-          .woodfired{
-            font-size: 2.5rem;
-            font-weight: 700;
-            padding-left:0.5rem;
-            letter-spacing: 0.5rem;
-            display: flex;
-            flex-direction: column;           
-                      p{
-                        color: #ffa908;
-                      }
-                      @include res.min-sm{
-            
-                      }@include res.min-md{
-                        flex-direction: row;
-                        font-size: 7rem;
-                                
-                      }@include res.min-lg{
-                        
-                      }
-                      @include res.min-xl{
-                      
-                      }
-               }
-            .home-description{
-              // backdrop-filter: blur(20px);
-              // background: rgba(255, 0, 0, 0.178);
-              // background-color: global.$basil;
-              display: flex;
-              flex-direction: column;
-              gap: .5rem;
-              margin-top: 1rem;
-              margin-left:0.5rem;
-              padding: 0.5rem;
-              font-size: larger;
-              font-weight: 500;
-              width: 80%;
-              min-height:9.5rem;
-              // border-radius: 10px;
-            @include res.min-sm{
-                      
-            }@include res.min-md{
-            
-            }@include res.min-lg{
-              width: 40%;
-            }
-            @include res.min-xl{
-            
-            }
-              .home-btn-menu{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: global.$redOne;
-                color: white;
-                font-size: large;
-                font-weight: 400;
-                text-transform: uppercase;
-                // border: 1px solid white;
-                padding: 0.4rem;
-                width: 7rem;
-                
-                
-              }
-              .home-btn-menu:hover{
-                  transition: all;
-                  transition-duration: 500ms;
-                  background-color: global.$redTwo;
-                }
-            }
-
-            .homeTit{
-              // background-color: aqua;
-                display: flex;
-                flex-direction: row;
-                padding-left: .5rem;
-                font-size: 1.8rem;
-                font-weight: 900;
-                text-transform: uppercase;
-                letter-spacing: 10px;
-                // margin-top: 3rem;
-                z-index: 10;
-                gap: 1rem;
-                color: white;
-                :nth-child(1){
-                  color: #ffa908;
-                }
-
-                @include res.min-sm{
-                  margin-top: 6rem;
-                  font-size: 4rem;
-                }
-                @include res.min-md {
-                    // padding-left: 2rem;
-                    font-size: 12vw;
-                }
-                @include res.min-lg {
-                  // padding-top: 6rem;
-                  font-size: 15vw;
-                }
-                @include res.min-xl{
-                  // padding-left: 2rem;
-                    margin-top: -1rem;
-                    font-size: 10vw;
-                }
-            }
+       
             @include res.min-sm{
             
             }@include res.min-md{
@@ -290,7 +184,113 @@
             
             }
     }
-  .text-shadow{
+.woodfired{
+      font-size: 2.5rem;
+      font-weight: 700;
+      padding-left:0.5rem;
+      letter-spacing: 0.3rem;
+      display: flex;
+      flex-direction: column;           
+                p{
+                  color: #ffa908;
+                }
+                @include res.min-sm{
+      
+                }@include res.min-md{
+                  flex-direction: row;
+                  font-size: 7rem;
+                          
+                }@include res.min-lg{
+                  
+                }
+                @include res.min-xl{
+                
+                }
+          }
+.home-description{
+// backdrop-filter: blur(20px);
+// background: rgba(255, 0, 0, 0.178);
+// background-color: global.$basil;
+display: flex;
+flex-direction: column;
+gap: .5rem;
+margin-top: 1rem;
+margin-left:0.5rem;
+padding: 0.5rem;
+font-size: larger;
+font-weight: 500;
+width: 80%;
+min-height:9.5rem;
+// border-radius: 10px;
+@include res.min-sm{
+        
+}@include res.min-md{
+
+}@include res.min-lg{
+width: 40%;
+}
+@include res.min-xl{
+
+}
+.home-btn-menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: global.$redOne;
+  color: white;
+  font-size: large;
+  font-weight: 400;
+  text-transform: uppercase;
+  // border: 1px solid white;
+  padding: 0.4rem;
+  width: 7rem;
+  
+  
+}
+.home-btn-menu:hover{
+    transition: all;
+    transition-duration: 500ms;
+    background-color: global.$redTwo;
+  }
+}
+
+.homeTit{
+// background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  padding-left: .5rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing:0.2rem;
+  // margin-top: 3rem;
+  z-index: 10;
+  gap: 1rem;
+  color: white;
+  :nth-child(1){
+    color: #ffa908;
+  }
+
+  @include res.min-sm{
+    margin-top: 6rem;
+    font-size: 4rem;
+  }
+  @include res.min-md {
+      // padding-left: 2rem;
+      font-size: 12vw;
+  }
+  @include res.min-lg {
+    // padding-top: 6rem;
+    font-size: 15vw;
+  }
+  @include res.min-xl{
+    // padding-left: 2rem;
+      margin-top: -1rem;
+      font-size: 10vw;
+  }
+}
+
+.text-shadow{
     color: global.$redOne;
     text-shadow: 3px 3px 1px white;  
   }
@@ -352,13 +352,34 @@
   width: 8rem;
   height: 8rem;
   // rotate: 45deg;
-}
-  @include res.max-sm{
-    .pizzaSlice{
-      left: 65%;
-      width: 8rem;
-      height: 8rem;
+
+    @include res.max-sm{
+        left: 65%;
+        width: 8rem;
+        height: 8rem;
     }
+    @include res.min-md {
+      left: 50%;
+      width: 20rem;
+      height: 20rem;
+    }
+    @include res.min-lg{
+      left: 70%;
+      width: 15rem;
+      height: 15rem; 
+   }
+   @include res.min-xl {
+    left: 83%;
+    top: 6rem;
+    width: 12rem;
+    height: 12rem;
+   }
+   @include res.max-xl {
+   } 
+}
+
+
+  @include res.max-sm{
       .event{
         padding: .4rem;
         margin-right: 2rem;
@@ -369,31 +390,6 @@
         font-size:130%;
       }
   }
-  @include res.min-md {
-    .pizzaSlice{
-      left: 50%;
-      width: 20rem;
-      height: 20rem;
-    }  
-  }
-  @include res.min-lg{
-    .pizzaSlice{
-      left: 70%;
-      width: 15rem;
-      height: 15rem;
-      
-    }   
-  }
-  @include res.min-xl {
-    .pizzaSlice{
-      left: 83%;
-      top: 6rem;
-      width: 12rem;
-      height: 12rem;
-    }
-  }
-  @include res.max-xl {
 
-  } 
   }
   

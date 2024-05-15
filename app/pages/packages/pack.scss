@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     min-height: 90vh;
+    width: 100%;
     gap:1rem;
     padding-top:2rem;
     
@@ -24,8 +25,6 @@
       padding-top: 1rem; 
       padding-bottom: 0px;
     }
-}
-
 .slide{
   // background-color: aqua;
   width: 22rem;
@@ -35,7 +34,6 @@
   justify-content: center;
   align-items: end;
 }
-
 .swiper {
   width: 100%;
   height: 80%;
@@ -44,8 +42,10 @@
   // background-color: #a53434;
   /* background: #000; */
 }
-
 .newSwiper{
   padding-bottom: 3rem;
   padding-top: 3rem;
 }
+
+}
+
