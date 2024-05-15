@@ -29,8 +29,7 @@ function GalleryWrapped({data}:any) {
                 height={500}
                 alt='photo'
               /> 
-           
-         </motion.div>
+         </motion.div> 
         )
          })}
     </div>

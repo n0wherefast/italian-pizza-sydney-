@@ -14,7 +14,7 @@ function NavSubMenu() {
     return (
     <>
         <nav className={` ${teko.className} mainNav`}>
-            <Link className='link' href={'/pages/menu/traditionals'} >Traditionals</Link>
+            <Link  className='link' href={'/pages/menu/traditionals'} >Traditionals</Link>
             <Link className='link' href={'/pages/menu/premium'}>Premium</Link>
             <Link className='link' href={'/pages/menu/arancini'} >Aranicini</Link>
         </nav>
