@@ -21,13 +21,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(235, 185, 78);
+  @include size.min-md{
+    background-color: rgb(235, 185, 78);
+  }
 }    
 
 .galleryHeadImage{
-  width: 80%;
+  width: 110%;
   height: auto;
   margin: 1rem;
+  @include size.min-md{
+    width: 80%;
+  }
 }
 
 .gallery {

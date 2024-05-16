@@ -21,9 +21,13 @@ function EventWrapped(data:any) {
         <div className='titleEvent'>{title}</div>
         {/* <div className="imageEvent"></div> */}
         <Image width={500} height={500}  src={urlFor(image).url()} className='imageEvent' alt='image' />
-        <div className="placeEvent">{place}</div>
-        <div className="dateEvent">{date}</div>
-        <div className="descEvent">{description}</div>      
+       <div className='detCont'>
+            <div className="placeEvent">{place}</div>
+            <div className="dateEvent">{date}</div>
+       </div> 
+        <div className="descEvent">{description} 
+          
+        </div>      
     </div>
       :null } 
 </>

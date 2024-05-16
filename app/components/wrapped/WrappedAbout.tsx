@@ -4,7 +4,7 @@ import { SlSocialInstagram ,SlSocialFacebook} from "react-icons/sl";
 import { FaWhatsapp } from "react-icons/fa";
 import Image from 'next/image';
 import alePic from '../../assets/italian pizza sydney20.webp'
-import TruckPic from '../../assets/italian pizza sydney27.webp'
+import TruckPic from '../../assets/wep files/italianPIzzaSydney (6).webp'
 import { motion} from 'framer-motion'
 import { variantX ,variantY} from '@/app/data/variants';
 import Link from 'next/link';

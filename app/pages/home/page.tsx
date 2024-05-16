@@ -52,9 +52,8 @@ function HomePage() {
               </motion.div>
 
         
-
-
-  <motion.div variants={variantY } initial='start' whileInView='end'  className='homeCard'>
+  <div className="homeCardContainer">
+    <motion.div variants={variantY } initial='start' whileInView='end'  className='homeCard'>
           <div className='cardSection'>
             <Image priority src={IPS} alt='image' className='IPSImage' />
             <div className='textCard'>Welcome! i&apos;m here to bring a taste of Italy  directly to your place!</div>
@@ -70,6 +69,9 @@ function HomePage() {
             }
           </div> 
     </motion.div>
+  </div>
+
+  
 
          
       </div>
