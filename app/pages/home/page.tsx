@@ -34,8 +34,8 @@ function HomePage() {
                 </motion.div>
                 <div className= {`  homeTit `} > 
                       
-                        <motion.p variants={variantX} initial='start' whileInView='end'  className='title-Home'> Italian  </motion.p>
-                        <motion.p variants={variantX} initial='start' whileInView='end'   className='title-Home'>Pizza </motion.p>
+                        <motion.p variants={variantX!} initial='start' whileInView='end'  className='title-Home'> Italian  </motion.p>
+                        <motion.p variants={variantX!} initial='start' whileInView='end'   className='title-Home'>Pizza </motion.p>
           
                 </div>
                 <motion.div variants={variantY} initial='start' whileInView='end' className='home-description'>
@@ -66,7 +66,7 @@ function HomePage() {
                 <Link href={'/pages/event'} className="event pulse ">
                   New Event
                 <MdArrowOutward />
-              </Link> : null
+              </Link> : null 
             }
           </div> 
     </motion.div>

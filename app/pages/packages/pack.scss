@@ -7,10 +7,11 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
+    min-height: 80vh;
     width: 100%;
     gap:1rem;
-    padding-top:2rem;
+    padding-top:2rem; 
+    padding-bottom: 2rem;
     
     @include res.min-sm{
       padding-top: 8rem; 

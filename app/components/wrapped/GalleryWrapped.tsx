@@ -4,6 +4,7 @@ import React,{useState} from 'react'
 import { urlFor } from '@/app/data/sanity'
 import {motion} from 'framer-motion'
 import { variantX,variantY } from '@/app/data/variants'
+import gallerySlice from '../../assets/gallery.webp'
 
 function GalleryWrapped({data}:any) {
     const photosOne = data.slice(0,9)
@@ -12,9 +13,12 @@ function GalleryWrapped({data}:any) {
     const [click, setClick] = useState(true)
   return (
     <div className='containGal'>
+      <div className='containerLogoGallery'>    
+         <Image src={gallerySlice} className='galleryHeadImage'  alt='gallery image' width={400} height={200} />
+      </div>    
+
     <div className='gallery'>
 
-       {/* <Image src={photos[0].download_url}  alt='p' width={200} height={200} /> */}
     <div className='colGal'>
       {photosOne.map((pic:any , index:number)=>{
         return(

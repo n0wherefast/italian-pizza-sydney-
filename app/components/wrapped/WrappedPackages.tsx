@@ -87,7 +87,7 @@ function WrappedPackages ( data:DATA ) {
  {
   globalStatePack == true?
    <Card title={title} price={price}  entre={entre} main={main} dessert={dessert} special={globalStatePack} />
-    : null
+    : null 
  }
     
 </div>   

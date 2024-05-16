@@ -1,5 +1,6 @@
 import NavSubMenu from "@/app/components/NavSubMenu";
 
+
 export default function MenuLayout({
     children
 } : {
