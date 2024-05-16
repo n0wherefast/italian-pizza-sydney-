@@ -10,7 +10,7 @@ import { variantX ,variantY} from '@/app/data/variants';
 import Link from 'next/link';
 
 function WrappedAbout() {
-    
+     
   return (
     <>
         <div className='mainAbout'>
@@ -18,7 +18,7 @@ function WrappedAbout() {
         <div className='sections'>
             
                 <motion.div 
-                  variants={variantY}
+                  variants={variantY!}
                   initial='start'
                   whileInView='end'
                  
@@ -30,21 +30,21 @@ function WrappedAbout() {
                     We are here to make your day special such as birthday, family gather, teambonding, wedding etc.
                 </motion.div>
                 
-            <motion.div  variants={variantX} initial="start" whileInView="end">
+            <motion.div  variants={variantX!} initial="start" whileInView="end">
                <Image src={alePic} alt='' className='imageAbout'/>
             </motion.div>
         </div>
 
         <motion.h1 
-            variants={variantY}
+            variants={variantY!}
             initial='start'
             whileInView='end'>HOW TO REACH ME
         </motion.h1>
 
 
         <div className='mid-sections'>
-        <motion.div  variants={variantX} initial="start" whileInView="end">
-          <Image src={TruckPic} alt='' className='imageAbout'/>
+        <motion.div  variants={variantX!} initial="start" whileInView="end">
+          <Image src={TruckPic} alt='pizza truck ' className='imageAbout'/>
         </motion.div> 
 
             <div className="socialCont">

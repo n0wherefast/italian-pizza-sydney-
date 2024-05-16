@@ -60,7 +60,10 @@
 .homeCardContainer{
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  @include res.min-md{
+    justify-content: end;
+  }
   @include res.min-xl{
     justify-content: start;
   }
@@ -78,10 +81,8 @@
     margin-bottom: 1rem;
 
     @include res.max-sm{
-       .homeCard{
-        width: 22rem;
-        height: 13rem;
-      }
+        width: 19rem;
+        height: 10rem;
     }
     @include res.min-md { 
         // margin-top: 5rem;
@@ -117,7 +118,7 @@
         color: white;
         font-size: .8rem;
         font-weight: 600;
-        min-width: 30%;
+        min-width: 35%;
         min-height: 50%;
         margin-left: 1rem;
         @include res.min-sm{
@@ -179,6 +180,7 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
+    gap: 1rem;
     align-items: start;
     margin-top: 9rem;
     margin-bottom: 2rem;
@@ -198,7 +200,7 @@
     }
 .woodfired{
       font-size: 2.2rem;
-      font-weight: 800;
+      font-weight: 500;
       padding-left:0.5rem;
       letter-spacing: 0.3rem;
       display: flex;
@@ -210,7 +212,7 @@
       
                 }@include res.min-md{
                   flex-direction: column;
-                  margin-bottom: 1rem;
+                  // margin-bottom: 1rem;
                   font-size: 7rem;
                           
                 }@include res.min-lg{
@@ -382,8 +384,8 @@ width: 40%;
       height: 15rem; 
    }
    @include res.min-xl {
-    left: 83%;
-    top: 6rem;
+    left: 80%;
+    top: 16rem;
     width: 12rem;
     height: 12rem;
    }
