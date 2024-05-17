@@ -24,52 +24,59 @@ function HomePage() {
 
   return (
     <>
-      <div className='  homeContainer '>
-              <Image priority src={pizzaSlice} alt='pizzaSlice' className='pizzaSlice bouncex' />
+      <div className='  mainHomeContainer '>
+          <div className="midContainer-1">
+                  <motion.div  className='circle-cont'>
+                    <div className='circle'/>
+                  </motion.div>
+                  <Image priority src={pizzaSlice} alt='pizzaSlice' className='pizzaSlice bouncex' />
 
-              <div className='Title-container'>
-                <motion.div variants={variantY} initial='start' whileInView='end' className='woodfired'>
-                  <p >Wood </p>
-                  <p > Fired</p>
-                </motion.div>
-                <div className= {`  homeTit `} > 
-                      
-                        <motion.p variants={variantX!} initial='start' whileInView='end'  className='title-Home'> Italian  </motion.p>
-                        <motion.p variants={variantX!} initial='start' whileInView='end'   className='title-Home'>Pizza </motion.p>
-          
-                </div>
-                <motion.div variants={variantY} initial='start' whileInView='end' className='home-description'>
-                  <p>
-                    In our truck we make an italian tradional pizza.
-                    We specialize in handcraft wood fired pizzas made with fresh ingredients.
-                  </p>
-                  <Link className='home-btn-menu' href="/pages/menu">Our menu</Link>
-                </motion.div>
-              </div>
-
-              <motion.div  className='circle-cont'>
-                <div className='circle'/>
-              </motion.div>
-
-        
-  <div className="homeCardContainer">
-    <motion.div variants={variantY } initial='start' whileInView='end'  className='homeCard'>
-          <div className='cardSection'>
-            <Image priority src={IPS} alt='image' className='IPSImage' />
-            <div className='textCard'>Welcome! i&apos;m here to bring a taste of Italy  directly to your place!</div>
+                  <div className='Title-container'>
+                    <motion.div variants={variantY} initial='start' whileInView='end' className='woodfired'>
+                      <p >Wood </p>
+                      <p > Fired</p>
+                    </motion.div>
+                    <div className= {`  homeTit `} > 
+                          
+                            <motion.p variants={variantX!} initial='start' whileInView='end'  className='title-Home'> Italian  </motion.p>
+                            <motion.p variants={variantX!} initial='start' whileInView='end'   className='title-Home'>Pizza </motion.p>
+              
+                    </div>
+                    <motion.div variants={variantY} initial='start' whileInView='end' className='home-description'>
+                      <p>
+                        In our truck we make an italian tradional pizza.
+                        We specialize in handcraft wood fired pizzas made with fresh ingredients.
+                      </p>
+                      <Link className='home-btn-menu' href="/pages/menu">Our menu</Link>
+                    </motion.div>
+                  </div>
           </div>
-          <div className="cardSection">
-            <Link href={'https://wa.me/qr/WEOOT3HPLJOVG1'} className='btnHome'>Order Now 🍕</Link>
-            {
-                isEvent == true ?  
-                <Link href={'/pages/event'} className="event pulse ">
-                  New Event
-                <MdArrowOutward />
-              </Link> : null 
-            }
-          </div> 
-    </motion.div>
-  </div>
+              
+              
+
+              
+        <div className="midContainer-2">
+          {/* <div className="homeCardContainer"> */}
+             <motion.div variants={variantY } initial='start' whileInView='end'  className='homeCard'>
+              <div className='cardSection'>
+                <Image priority src={IPS} alt='image' className='IPSImage' />
+                <div className='textCard'>Welcome! i&apos;m here to bring a taste of Italy  directly to your place!</div>
+              </div>
+              <div className="cardSection">
+                <Link href={'https://wa.me/qr/WEOOT3HPLJOVG1'} className='btnHome'>Order Now 🍕</Link>
+                {
+                    isEvent == true ?  
+                    <Link href={'/pages/event'} className="event pulse ">
+                       <div>New Event</div>
+                    <MdArrowOutward />
+                  </Link> : null 
+                }
+              </div> 
+             </motion.div>
+           {/* </div> */}
+          </div>
+        
+ 
 
   
 
