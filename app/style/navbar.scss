@@ -141,7 +141,7 @@ li:hover {
     margin-left: -20px ;
     width: 35px;
     height: 20px;
-    background-color: i.$new;
+    background-color: rgb(247, 88, 88);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,7 +160,9 @@ li:hover {
     position: absolute;
     width: 35px;
     height: 20px;
-    background-color: i.$new;
+    // background-color: i.$new;
+    background-color: rgb(247, 88, 88);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,12 +175,14 @@ li:hover {
     z-index: -100;
     width: 35px;
     height: 20px;
-    margin-left:70px ;
+    margin-left:90px ;
     margin-top: -1rem;
 
     @include res.max-sm{
-       background-color: i.$new;
-        margin-left: 110px; 
+    // background-color: i.$new;
+    background-color: rgb(247, 88, 88);
+    margin-top: -4.5rem;
+    margin-left: 140px; 
     }
   }
 

@@ -4,6 +4,8 @@ import {links,LINK }from "../data/data"
 import Link from 'next/link'
 import { GiFullPizza } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import { MdOutlineNotificationsActive } from "react-icons/md";
+
 import '../style/navbar.scss'
 import { BiMenuAltRight, } from "react-icons/bi";
 import { Libre_Franklin,Teko} from 'next/font/google'
@@ -48,7 +50,7 @@ useEffect(()=>{
 
     const IconNotify = (style:string)=>{
           return(
-             <div className={`${teko.className} ${style}`} >New</div>
+             <div className={`${teko.className} ${style}`} >{<MdOutlineNotificationsActive/>}</div>
           )      
      }
       

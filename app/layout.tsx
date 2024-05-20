@@ -58,7 +58,7 @@ console.log(dataEvent[0].isEvent)
             <div className="w-full bg-zinc-900 ">
               {children}
             </div>
-              {/* <PrivacyConsent/> */}
+              <PrivacyConsent/>
         </ReduxProvider>
       </body>
     </html>
