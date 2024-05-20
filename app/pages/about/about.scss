@@ -1,4 +1,5 @@
-@use '../../style//responsiveLayout.scss' as size;
+@use '../../style//responsiveLayout.scss' as res;
+@use '../../style//variable.scss' as global;
 
 *{
  padding: 0px;
@@ -14,6 +15,7 @@ h1{
     align-items: center;
     font-weight: 900;
     font-size: 2.9rem;
+    z-index: 20;
 }
 .mainAbout{
     // background-color: aqua;
@@ -45,35 +47,35 @@ h1{
 
 .imageAbout{
     object-fit: cover;
-    width: 20rem;
-    height: 15rem;
+    width: 22rem;
+    height: auto;
 }
 
 
 
 .socialCont{
-    // background-color: brown;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 8rem;
-    height: 8rem;
+    width: 100%;
+    height: 5rem;
     margin: 1rem;
-    border-radius: 10rem;
-    border: 2px solid black;
     gap: 1rem;
-    box-shadow:  3px 3px 1px black,
-    6px 6px 1px black,
-    10px 10px 1px black,;
+    z-index: 20;
+    // box-shadow:  3px 3px 1px black,
+    // 6px 6px 1px black,
+    // 10px 10px 1px black,;
 
 }
 
 .Social{
     display: flex;
+    justify-content: space-between;
     font-size: xx-large;
     gap:1rem;
     color: black;
+    width: 80%;
  
 }
 .Contact{
@@ -83,19 +85,55 @@ h1{
     font-weight: 500;
     padding-top: 1rem;
     border-top: 2px solid black;
+    z-index: 100;
 }
 
+.WA{
+  color: green;
+}
+.FB{
+  color: blue;
+}
+.IG{
+  color:rgb(233, 55, 114);
+}
 
-@include size.min-md{
+.circleAB{
+  background-color: global.$redOne;  
+  border-radius: 100%;
+  position: fixed;
+  // z-index: 10;
+  top: -5rem;
+  left: 15%;
+  width: 34rem;
+  height: 34rem;
+  @include res.min-sm{
+  
+  }@include res.min-md{
+    left: 40%;
+    width: 90rem;
+    height: 90rem;
+  
+  }@include res.min-lg{
+    left: 40%;
+    width: 90rem;
+    height: 90rem;
+  }
+  @include res.min-xl{
+  
+  }
+}   
+
+@include res.min-md{
     h1{
         padding: 1rem;
         font-size: 3.5rem;
         width: 50%;
         // background-color: blueviolet;
     }
-  .image{
-    width: 40rem;
-    height: 30rem;   
+    .imageAbout{
+      width: 35rem;
+      height: auto;
   }
   .text{
     width: 50%;
@@ -110,28 +148,20 @@ h1{
     }
   .mid-sections{
     justify-content: space-around;
+    flex-direction: column;
     }
   .mainAbout{
     max-width: 90%;
   }
 
-  .socialCont{
-    width: 12rem;
-    height: 12rem;
-
-}
+//   .socialCont{
+//     width: 12rem;
+//     height: 12rem;
+// }
 .Social{
     font-size: 2.5rem;
 }
-.WA{
-  color: green;
-}
-.FB{
-  color: blue;
-}
-.IG{
-  color:rgb(233, 55, 114);
-}
+
 .Contact{
   width: 80%;
 }

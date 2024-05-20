@@ -47,7 +47,7 @@ function HomePage() {
                         In our truck we make an italian tradional pizza.
                         We specialize in handcraft wood fired pizzas made with fresh ingredients.
                       </p>
-                      <Link className='home-btn-menu' href="/pages/menu">Our menu</Link>
+                      <Link className='home-btn-menu' href="/pages/menu">Our menu <MdArrowOutward /></Link>
                     </motion.div>
                   </div>
           </div>

@@ -14,9 +14,12 @@ function WrappedAbout() {
   return (
     <>
         <div className='mainAbout'>
+          <motion.div  className='circle-cont'>
+                    <div className='circleAB'/>
+                  </motion.div>
         <h1>WHO I&apos;AM  AND WHAT IS ITALIAN PIZZA SYDNEY</h1>
         <div className='sections'>
-            
+                 
                 <motion.div 
                   variants={variantY!}
                   initial='start'
@@ -55,13 +58,13 @@ function WrappedAbout() {
                     <Link className='IG' href={'https://www.instagram.com/italianpizzasyd?igsh=NmxsOGVmeWQ2dXVv'}>
                     <SlSocialInstagram/> 
                     </Link> 
-                </div>
-                <div className='Social'>
+                {/* </div> */}
+                {/* <div className='Social'> */}
                     <Link className='WA' href={'https://wa.me/qr/WEOOT3HPLJOVG1 '}>
                       <FaWhatsapp/>
                     </Link>
             </div>
-            </div>
+          </div>
         </div>
 
         <div className='Contact'>

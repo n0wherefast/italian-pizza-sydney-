@@ -78,7 +78,7 @@
         font-size: 2.2rem;
         font-weight: 900;
         text-transform: uppercase;
-        letter-spacing:0.5rem;
+        letter-spacing:0.4rem;
         z-index: 10;
         gap: 1rem;
         color: white;
@@ -126,13 +126,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: global.$redOne;
-        color: white;
+        gap: 0.5rem;
+        // background-color: global.$redOne;
+        color: global.$redOne;
+        border:  1px solid global.$redOne;
         font-size: large;
-        font-weight: 400;
+        font-weight: 500;
         text-transform: uppercase;
         padding: 0.4rem;
-        width: 7rem;
+        width: 8rem;
         margin-top: .5rem;
         
         
@@ -156,6 +158,12 @@
       max-width:100%;
       z-index: 10;
       padding: 1rem;
+      display: flex;
+      justify-content: center;
+
+      @include res.min-md{
+        justify-content: start;
+      }
 
       .homeCard{
         border-radius: 10px;
@@ -231,6 +239,7 @@
               min-height: 50%;
               height: 1.5rem;
               margin-left: 1rem;
+              padding-left:0.5rem;
               @include res.min-sm{
                 font-size: 1rem;
               }
@@ -270,7 +279,7 @@
           background-color: global.$redOne;  
           border-radius: 100%;
           position: fixed;
-          // z-index: 10;
+          // z-index: 0;
           top: -5rem;
           left: 15%;
           width: 34rem;
