@@ -65,7 +65,7 @@ useEffect(()=>{
                     : <IoMdClose className='menuMobile transition'/> }
             </div> 
         </div>
-          <ul className={` ${isClick === true ? 'mobileLink' :'navLink' } `}>
+          <menu className={` ${isClick === true ? 'mobileLink' :'navLink' } `}>
                {
                   links.map((link:LINK)=>{
                       const {id,name,path,news} = link
@@ -77,7 +77,7 @@ useEffect(()=>{
                       )
                   })
               } 
-          </ul>           
+          </menu>           
     </nav>
   )
 }

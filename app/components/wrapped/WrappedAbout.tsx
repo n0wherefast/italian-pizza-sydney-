@@ -52,15 +52,15 @@ function WrappedAbout() {
 
             <div className="socialCont">
                 <div className='Social'>
-                    <Link className='FB' href={'https://www.facebook.com/profile.php?id=100088427027910'}>
+                    <Link aria-label='facebook' className='FB' href={'https://www.facebook.com/profile.php?id=100088427027910'}>
                     <SlSocialFacebook/>
                     </Link>
-                    <Link className='IG' href={'https://www.instagram.com/italianpizzasyd?igsh=NmxsOGVmeWQ2dXVv'}>
+                    <Link aria-label='instagram' className='IG' href={'https://www.instagram.com/italianpizzasyd?igsh=NmxsOGVmeWQ2dXVv'}>
                     <SlSocialInstagram/> 
                     </Link> 
                 {/* </div> */}
                 {/* <div className='Social'> */}
-                    <Link className='WA' href={'https://wa.me/qr/WEOOT3HPLJOVG1 '}>
+                    <Link aria-label='whatsapp' className='WA' href={'https://wa.me/qr/WEOOT3HPLJOVG1 '}>
                       <FaWhatsapp/>
                     </Link>
             </div>
