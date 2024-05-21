@@ -14,6 +14,7 @@
     color: black;
     font-size: x-large;
     font-weight: 800;
+    z-index: 20;
     .titleEvent{
       display: flex;
       justify-content: center;
@@ -22,6 +23,8 @@
     font-size: 3rem;
     font-weight: 900;
     width: 100%;
+    z-index: 20;
+
       @include size.min-md{
       width: 60%;
     }
@@ -31,6 +34,8 @@
     display: flex;
     justify-content:space-around;
     align-items: center;
+    z-index: 20;
+
     @include size.min-md{
       width: 50%;
     }
@@ -38,11 +43,15 @@
   }
   .placeEvent , .dataEvent , .descEvent {
     margin: 2rem;
+    z-index: 20;
+
   }
   .imageEvent{
     background-color: red;
     width: 100%;
     height: auto;
+    z-index: 20;
+
     @include size.min-md{
       width: 60%;
     }
@@ -55,10 +64,43 @@
     font-size: x-large;
     padding-left: 1rem;
     padding-right: 1rem;
+    z-index: 20;
+
     @include size.min-md{
       width: 50%;
     }
   }
+
+  .circle-cont{
+    width: 100%;
+    // min-height: 10rem;
+  }
+  .circle{
+        background-color: global.$redOne;  
+        border-radius: 100%;
+        position: fixed;
+        // z-index: 0;
+        top: 0rem;
+        left: 15%;
+        width: 35rem;
+        height: 35rem;
+       
+        @include size.min-sm{
+        
+        }@include size.min-md{
+          left: 40%;
+          width: 90rem;
+          height: 90rem;
+        
+        }@include size.min-lg{
+          left: 40%;
+          width: 90rem;
+          height: 90rem;
+        }
+        @include size.min-xl{
+        
+        }
+  } 
 }
 
 

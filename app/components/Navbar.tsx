@@ -58,7 +58,7 @@ useEffect(()=>{
       <nav className={` ${teko.className}  ${isClick=== true? 'mobileopened transition' :'navbarCont'} `} >
         <div className={`sec`}>
           {/* <Image className='logo' src={logo} width={55} height={55} alt='logo'/> */}
-            <div className='title'>Italian Pizza  Sydney</div>
+            <Link  href={'/'} className='title'>Italian Pizza  Sydney</Link>
             <div className={`${ isClick&& 'rotate transition'}`} onClick={()=> setIsClick(!isClick)}>
              { isClick===false?  size >805  ? null  :notify&& IconNotify('notifyMenuClosed pulse') : null}
                   {isClick === false ?<BiMenuAltRight  size={35} className='menuMobile transition '/>
