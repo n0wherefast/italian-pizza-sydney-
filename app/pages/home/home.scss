@@ -167,7 +167,7 @@
 
       .homeCard{
         border-radius: 10px;
-        max-width: 20rem;
+        max-width: 22rem;
         height: 11rem;
         background-color: global.$redOne;
         display: flex;
@@ -176,7 +176,7 @@
   
           @include res.max-sm{ }
           @include res.min-md { 
-            max-width: 25rem;
+            max-width: 27rem;
             height: 13rem;
           }
           @include res.min-lg{ 
@@ -258,7 +258,7 @@
               gap: .5rem;
               // border: 1px solid white;
               padding: .5rem;
-              // margin-right: 3rem;
+              margin-right: 1rem;
               font-size: 1rem;
               font-weight: 800;
               color: white;
