@@ -27,7 +27,7 @@ async function Gallery() {
   const data = await getData()
   return (
     <>
-    <GalleryWrapped data={data} />
+      <GalleryWrapped data={data} />
     </>
   )
 }

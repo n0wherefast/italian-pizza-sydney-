@@ -4,6 +4,8 @@ import {links,LINK }from "../data/data"
 import Link from 'next/link'
 import { GiFullPizza } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import { MdOutlineNotificationsActive } from "react-icons/md";
+
 import '../style/navbar.scss'
 import { BiMenuAltRight, } from "react-icons/bi";
 import { Libre_Franklin,Teko} from 'next/font/google'
@@ -48,7 +50,7 @@ useEffect(()=>{
 
     const IconNotify = (style:string)=>{
           return(
-             <div className={`${teko.className} ${style}`} >New</div>
+             <div className={`${teko.className} ${style}`} >{<MdOutlineNotificationsActive/>}</div>
           )      
      }
       
@@ -56,14 +58,14 @@ useEffect(()=>{
       <nav className={` ${teko.className}  ${isClick=== true? 'mobileopened transition' :'navbarCont'} `} >
         <div className={`sec`}>
           {/* <Image className='logo' src={logo} width={55} height={55} alt='logo'/> */}
-            <div className='title'>Italian Pizza  Sydney</div>
+            <Link  href={'/'} className='title'>Italian Pizza  Sydney</Link>
             <div className={`${ isClick&& 'rotate transition'}`} onClick={()=> setIsClick(!isClick)}>
              { isClick===false?  size >805  ? null  :notify&& IconNotify('notifyMenuClosed pulse') : null}
                   {isClick === false ?<BiMenuAltRight  size={35} className='menuMobile transition '/>
                     : <IoMdClose className='menuMobile transition'/> }
             </div> 
         </div>
-          <ul className={` ${isClick === true ? 'mobileLink' :'navLink' } `}>
+          <menu className={` ${isClick === true ? 'mobileLink' :'navLink' } `}>
                {
                   links.map((link:LINK)=>{
                       const {id,name,path,news} = link
@@ -75,7 +77,7 @@ useEffect(()=>{
                       )
                   })
               } 
-          </ul>           
+          </menu>           
     </nav>
   )
 }

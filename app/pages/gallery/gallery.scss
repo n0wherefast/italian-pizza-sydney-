@@ -10,6 +10,29 @@
     margin: auto;
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    // background-color: rgb(235, 185, 78);
+
+}
+.containerLogoGallery{
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include size.min-md{
+    background-color: rgb(235, 185, 78);
+  }
+}    
+
+.galleryHeadImage{
+  width: 110%;
+  height: auto;
+  margin: 1rem;
+  @include size.min-md{
+    width: 80%;
+  }
 }
 
 .gallery {

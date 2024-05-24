@@ -4,21 +4,24 @@ import { SlSocialInstagram ,SlSocialFacebook} from "react-icons/sl";
 import { FaWhatsapp } from "react-icons/fa";
 import Image from 'next/image';
 import alePic from '../../assets/italian pizza sydney20.webp'
-import TruckPic from '../../assets/italian pizza sydney27.webp'
+import TruckPic from '../../assets/wep files/italianPIzzaSydney (6).webp'
 import { motion} from 'framer-motion'
 import { variantX ,variantY} from '@/app/data/variants';
 import Link from 'next/link';
 
 function WrappedAbout() {
-    
+     
   return (
     <>
         <div className='mainAbout'>
+          <motion.div  className='circle-cont'>
+                    <div className='circleAB'/>
+                  </motion.div>
         <h1>WHO I&apos;AM  AND WHAT IS ITALIAN PIZZA SYDNEY</h1>
         <div className='sections'>
-            
+                 
                 <motion.div 
-                  variants={variantY}
+                  variants={variantY!}
                   initial='start'
                   whileInView='end'
                  
@@ -30,38 +33,38 @@ function WrappedAbout() {
                     We are here to make your day special such as birthday, family gather, teambonding, wedding etc.
                 </motion.div>
                 
-            <motion.div  variants={variantX} initial="start" whileInView="end">
+            <motion.div  variants={variantX!} initial="start" whileInView="end">
                <Image src={alePic} alt='' className='imageAbout'/>
             </motion.div>
         </div>
 
         <motion.h1 
-            variants={variantY}
+            variants={variantY!}
             initial='start'
             whileInView='end'>HOW TO REACH ME
         </motion.h1>
 
 
         <div className='mid-sections'>
-        <motion.div  variants={variantX} initial="start" whileInView="end">
-          <Image src={TruckPic} alt='' className='imageAbout'/>
+        <motion.div  variants={variantX!} initial="start" whileInView="end">
+          <Image src={TruckPic} alt='pizza truck ' className='imageAbout'/>
         </motion.div> 
 
             <div className="socialCont">
                 <div className='Social'>
-                    <Link className='FB' href={'https://www.facebook.com/profile.php?id=100088427027910'}>
+                    <Link aria-label='facebook' className='FB' href={'https://www.facebook.com/profile.php?id=100088427027910'}>
                     <SlSocialFacebook/>
                     </Link>
-                    <Link className='IG' href={'https://www.instagram.com/italianpizzasyd?igsh=NmxsOGVmeWQ2dXVv'}>
+                    <Link aria-label='instagram' className='IG' href={'https://www.instagram.com/italianpizzasyd?igsh=NmxsOGVmeWQ2dXVv'}>
                     <SlSocialInstagram/> 
                     </Link> 
-                </div>
-                <div className='Social'>
-                    <Link className='WA' href={''}>
+                {/* </div> */}
+                {/* <div className='Social'> */}
+                    <Link aria-label='whatsapp' className='WA' href={'https://wa.me/qr/WEOOT3HPLJOVG1 '}>
                       <FaWhatsapp/>
                     </Link>
             </div>
-            </div>
+          </div>
         </div>
 
         <div className='Contact'>

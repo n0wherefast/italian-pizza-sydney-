@@ -2,292 +2,406 @@
 @use "../../style/responsiveLayout.scss" as res;
 
 
-.homeContainer{
+.mainHomeContainer{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: start;
-    padding-top: 3rem;
-    width: 100vw;
-    height: 92.8vh;
-    gap: 1rem;
- 
-
-   
+    justify-content: space-between;
+    max-width: 100%;
+    height:100vh;
     @include res.min-md   {
-        justify-content: center;
-        padding: 0px;
-        width: 100%;
-        height: 100vh;
+        // justify-content: center;
+        // padding: 0px;
+        // width: 100%;
+        // height: 100vh;
     }
     @include res.min-lg   {
-        justify-content: space-around;
-        gap: 0rem;
-        padding: 0px;
-        width: 100%;
-        height: 100vh;
+        // justify-content: space-between;
+        // gap: 0rem;
+        // padding: 0px;
+        // width: 100%;
+        // height: 100vh;
         // flex-direction: row;
     }
     @include res.min-xl{
-      flex-direction: row;
+      // flex-direction: row;
     }
-    
-  }
-  .homeCard{
-    border-radius: 10px;
-    background-color: global.$redOne;
-    margin-left: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
 
-  .IPSImage{
-    width: 65%;
-    height: 90%;
-    border-radius: 10px;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    @include res.min-sm{
-      height: 85%;
-    }
-  }
-  .btnHome{
-    background-color: global.$basil;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius:5px;
-    color: white;
-    font-size: 1.1rem;
-    font-weight: 600;
-    width: 40%;
-    height: 50%;
-    margin-left: 1rem;
-    @include res.min-sm{
-      font-size: 1.3rem;
-      width: 45%;
-    }
-    @include res.min-md{
-      font-size: 1.9rem;
+    .midContainer-1{
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      // background-color: aqua;
+      .Title-container{
+        // z-index: 20;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+        // gap: 1rem;
+          
+                @include res.min-sm{
+                
+                }@include res.min-md{
+                          
+                }@include res.min-lg{
+                                  }
+                @include res.min-xl{ }
+      }
+      .woodfired{
+            font-size: 2.2rem;
+            font-weight: 500;
+            padding-left:0.5rem;
+            letter-spacing: 0.5rem;
+            display: flex;
+            flex-direction: column;           
+                      p{
+                        color: #ffa600;
+                      }
+                      @include res.min-sm{
+            
+                      }@include res.min-md{
+                        flex-direction: column;
+                        margin-bottom: 1rem;
+                        font-size: 7rem;
+                                
+                      }@include res.min-lg{
+                      }
+                      @include res.min-xl{
+                        flex-direction: row;
+                      }
+      }
+      .homeTit{
+        display: flex;
+        flex-direction: row;
+        padding-left: .5rem;
+        font-size: 2.2rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing:0.4rem;
+        z-index: 10;
+        gap: 1rem;
+        color: white;
+        :nth-child(1){
+          color: #ffa600;
+        }
+
+        @include res.min-sm{
+          margin-top: 6rem;
+          font-size: 4rem;
+        }
+        @include res.min-md {
+            font-size: 12vw;
+        }
+        @include res.min-lg {
+          font-size: 10vw;
+        }
+        @include res.min-xl{
+            margin-top: -1rem;
+            font-size: 10vw;
+        }
+      }
+      .home-description{
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+      margin-top: 1rem;
+      margin-left:0.5rem;
+      padding: 0.5rem;
+      font-size: larger;
+      font-weight: 500;
+      width: 80%;
+      min-height:9.5rem;
+      @include res.min-sm{
+              
+      }@include res.min-md{
+
+      }@include res.min-lg{
       width: 40%;
-    }
-  }
-  // section{
-  //   width: 100%;
-  //   display: flex;
-  //   background-color: aqua;
-  // }
-  .cardSection{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 65%;
-    width: 100%;
-    // background-color: aqua;
-  }
-  .event{
-    background-color: transparent;
-    border-radius: 8px;
-    // border: 1px solid white;
-    padding: .5rem;
-    margin-right: 3rem;
-    font-size: x-large;
-    font-weight: 800;
-    color: white;
-  }
-
-  
-  .textCard{
-    flex: 20;
-    margin: .8rem;
-    font-size: .9rem;
-    font-weight: 600;
-    color: white;
-   
-    
-    @include res.min-sm{
-      font-size: 1rem;
-      padding-right: 1rem;
-      padding-left: 1rem;
-      margin: 1rem;
-    }@include res.min-md{
-      font-size: 1.3rem;
-      margin: 1rem;
-    }@include res.min-lg{
-      font-size: 1.3rem;
-      margin: 1.5rem;
-    }
-    @include res.min-xl{
-      font-size: 1.5rem;
-      margin: 1rem;
-    }
-  }
-
-.homeTit{
-    display: flex;
-    flex-direction: column;
-    padding-left: .5rem;
-    font-size: 4rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 3rem;
-    // gap: 1rem;
-
-    @include res.min-sm{
-      margin-top: 6rem;
-      font-size: 4rem;
-    }
-    
-    @include res.min-md {
-        padding-left: 2rem;
-        font-size: 12vw;
-        // background-color: aqua;
-    }
-    @include res.min-lg {
-       padding-top: 6rem;
-       font-size: 19vw;
-       background-color: green;
-
-    }
-    @include res.min-xl{
-       padding-left: 2rem;
-        margin-top: -1rem;
-        font-size: 12vw;
-    }
-}
-.title-Home{
-    display: block;
-    // flex-direction: row;
-    // align-items: center;
-    // background-color: aqua;
-}
-
-.size{
-  display: flex;
-  align-items: end;
-
-    // height: 95px;
-    max-height: 100%;
-    font-size: 5.5rem;
-    // background-color: red;
-
-    @include res.min-sm{
-      // height: 105px;
-      font-size:6rem;
-    }
-    
-    @include res.min-md {
-        // height: 135px;
-        font-size: 16vw;
-    }
-    @include res.min-lg{
-      height: 200px;
-      font-size:17vw ;
-    }
-    @include res.min-xl {
-        height: auto;
-        font-size: 12vw;
-    }
-}
-
-
-.pizzaPixel{
-  //mobile first//
-  position: fixed;
-  z-index: 50;
-  top: 1rem;
-  left: 80%;
-  width: 12rem;
-  height: 12rem;
-  rotate: 45deg;
-}
-
-.clip-text {
-       color: global.$redOne;
-       text-shadow: 3px 3px 1px global.$basil;  
-      ;
-   
-    @include res.min-lg   {
-       color: transparent;
-       text-shadow: none;
-    @supports (background-clip:text) or (-webkit-background-clip:text) {       
-      background-clip: text;
-      -webkit-background-clip: text;
-      // background-image: url(../../assets/pizzaOne.png);
-       }
-      background-size: cover;
-      background-image: url(https://media.giphy.com/media/3osxY7nhAHq7gOBIiY/giphy.gif);
-     }
-
-    
-  }
-  
-
-  @include res.max-sm{
-    .pizzaPixel{
-      left: 76%;
-      width: 12rem;
-      height: 12rem;
-    }
-     .homeCard{
-      width: 22rem;
-      height: 13rem;
-  }
-      .event{
-        padding: .4rem;
-        margin-right: 2rem;
-        font-size: medium;
-        font-weight: 800;
       }
-      p::first-letter{
-        font-size:130%;
+      @include res.min-xl{
+
       }
-  }
+      .home-btn-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        // background-color: global.$redOne;
+        color: global.$redOne;
+        border:  1px solid global.$redOne;
+        font-size: large;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 0.4rem;
+        width: 8rem;
+        margin-top: .5rem;
+        
+        
+      }
+      .home-btn-menu:hover{
+          transition: all;
+          transition-duration: 500ms;
+          background-color: global.$redTwo;
+        }
+      }
+      .title-Home{
+        display: block;
+      }
+
+
+
+      
+      
+    }
+    .midContainer-2{
+      max-width:100%;
+      z-index: 10;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+
+      @include res.min-md{
+        justify-content: start;
+      }
+
+      .homeCard{
+        border-radius: 10px;
+        max-width: 22rem;
+        height: 11rem;
+        background-color: global.$redOne;
+        display: flex;
+        flex-direction: column;
+       
   
-  @include res.min-md {
-    .pizzaPixel{
+          @include res.max-sm{ }
+          @include res.min-md { 
+            max-width: 27rem;
+            height: 13rem;
+          }
+          @include res.min-lg{ 
+            
+          }
+          @include res.min-xl {
+                
+          }
+  
+          .cardSection{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 65%;
+            width: 100%;
+            // background-color: aqua;
+          }
+            .IPSImage{
+              width: 55%;
+              height: 90%;
+              border-radius: 10px;
+              margin-top: 1rem;
+              margin-left: 1rem;
+              @include res.min-sm{
+                height: 85%;
+              }
+            } 
+            .textCard{
+              margin: 1rem;
+              font-size: .9rem;
+              max-height: 6rem;
+              font-weight: 600;
+              color: white;
+              @include res.min-sm{
+                font-size: 1rem;
+                padding-right: 1rem;
+                padding-left: 1rem;
+                // margin: 1rem;
+              }@include res.min-md{
+                font-size: 1.1em;
+                // margin: 1rem;
+              }@include res.min-lg{
+              }
+              @include res.min-xl{
+                // margin: 1rem;
+              }
+            }
+  
+            .btnHome{
+              background-color: global.$basil;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: none;
+              border-radius:5px;
+              color: white;
+              font-size: 1rem;
+              font-weight: 600;
+              min-width: 35%;
+              min-height: 50%;
+              height: 1.5rem;
+              margin-left: 1rem;
+              padding-left:0.5rem;
+              @include res.min-sm{
+                font-size: 1rem;
+              }
+              @include res.min-md{
+                font-size: 1.3rem;
+                min-width: 40%;
+              }
+            }
+              
+            .event{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: transparent;
+              border-radius: 8px;
+              gap: .5rem;
+              // border: 1px solid white;
+              padding: .5rem;
+              margin-right: 1rem;
+              font-size: 1rem;
+              font-weight: 800;
+              color: white;
+            }
+      }
+
+    }
+
+
+
+
+
+    .circle-cont{
+      width: 100%;
+      // min-height: 10rem;
+    }
+    .circle{
+          background-color: global.$redOne;  
+          border-radius: 100%;
+          position: fixed;
+          // z-index: 0;
+          top: -5rem;
+          left: 15%;
+          width: 34rem;
+          height: 34rem;
+          @include res.min-sm{
+          
+          }@include res.min-md{
+            left: 40%;
+            width: 90rem;
+            height: 90rem;
+          
+          }@include res.min-lg{
+            left: 40%;
+            width: 90rem;
+            height: 90rem;
+          }
+          @include res.min-xl{
+          
+          }
+    }    
+    // .homeCardContainer{
+    
+    //   @include res.min-md{
+    //   }
+    //   @include res.min-xl{
+    //   }
+    // }
+    
+    
+    .text-shadow{
+        color: global.$redOne;
+        text-shadow: 3px 3px 1px white;  
+    }
+    .clip-text {
+              
+        @include res.min-lg   {
+          color: transparent;
+          text-shadow: none;
+        @supports (background-clip:text) or (-webkit-background-clip:text) {       
+          background-clip: text;
+          -webkit-background-clip: text;
+          // background-image: url(../../assets/pizzaOne.png);
+          }
+          background-size: cover;
+          background-image: url(https://media.giphy.com/media/3osxY7nhAHq7gOBIiY/giphy.gif);
+        }
+
+        
+    }
+    .size{
+      display: flex;
+      align-items: end;
+
+        // height: 95px;
+        max-height: 100%;
+        font-size: 5.5rem;
+        // background-color: red;
+
+        @include res.min-sm{
+          // height: 105px;
+          font-size:6rem;
+        }
+        
+        @include res.min-md {
+            // height: 135px;
+            font-size: 16vw;
+        }
+        @include res.min-lg{
+          height: 200px;
+          font-size:17vw ;
+        }
+        @include res.min-xl {
+            height: auto;
+            font-size: 12vw;
+        }
+    }
+    .pizzaSlice{
+      //mobile first//
+      position: fixed;
+      z-index: 50;
+      top: 6rem;
       left: 70%;
-      width: 20rem;
-      height: 20rem;
-    }  
-    .homeCard{ 
-      margin-top: 5rem;
-      width: 35rem;
-      height: 20rem;
-      
-    }
-   
-  }
-  @include res.min-lg{
-    .pizzaPixel{
-      left: 81%;
-      width: 25rem;
-      height: 25rem;
-      
-    }   
-    .homeCard{ 
-      margin-top: 0px;
-      width: 35rem;
-      height: 20rem;
-      
-    }
-  }
-  @include res.min-xl {
-    .pizzaPixel{
-      left: 87%;
-      width: 25rem;
-      height: 25rem;
-    }
-   .homeCard{ 
-      width: 35rem;
-      margin-top: 37rem;
-      margin-left: 17rem;
-    }
-  }
-  
-  @include res.max-xl {
+      width: 8rem;
+      height: 8rem;
+      // rotate: 45deg;
 
-  }
+        @include res.max-sm{
+            left: 65%;
+            width: 8rem;
+            height: 8rem;
+        }
+        @include res.min-md {
+
+          left: 60%;
+          top: 10rem;
+          width: 15rem;
+          height: 15rem;
+        }
+        @include res.min-lg{
+          left: 70%;
+          width: 15rem;
+          height: 15rem; 
+      }
+      @include res.min-xl {
+        left: 80%;
+        top: 16rem;
+        width: 12rem;
+        height: 12rem;
+      }
+      @include res.max-xl {
+      } 
+    }
+    @include res.max-sm{
+          .event{
+            padding: .4rem;
+            margin-right: 2rem;
+            font-size: medium;
+            font-weight: 800;
+          }
+          p::first-letter{
+            font-size:130%;
+          }
+    }
+}
+  

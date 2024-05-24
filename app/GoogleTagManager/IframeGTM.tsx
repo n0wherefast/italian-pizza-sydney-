@@ -10,7 +10,7 @@ function IframeGTM() {
     <>
     {
         consent == true ? <iframe 
-        src="https://www.googletagmanager.com/ns.html?id=GTM-5P42Q36H"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5W5QDDKP"
         height="0" 
         width="0"
         style={{'display':'none', 'visibility':'hidden'}} >
@@ -22,3 +22,5 @@ function IframeGTM() {
 }
 
 export default IframeGTM
+
+

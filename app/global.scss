@@ -5,15 +5,15 @@
       margin: 0px;
     }
 
+
 body{
     background-color: global.$global-bg;
 }
 
-ul{
+ul, menu{
     list-style-type:none;
     margin: 0px;
     padding: 0px;
-    
 }
 
 a {
@@ -21,15 +21,34 @@ a {
 }   
 .pulse{
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  
   @keyframes pulse {
     0%, 100% {
       opacity: 1;
-      color: global.$basil;
+      color: rgb(252, 59, 59);
+      border: 1px solid white;
+      background-color:white;
     }
     50% {
       opacity: 1;
       color: white;
+      border: 1px solid rgb(252, 59, 59);
+      background-color: rgb(252, 59, 59);
+
+
+    }
+ }
+}
+
+
+.bouncex {
+  animation: bouncex 3s infinite;  
+@keyframes bouncex {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-15px); }
+        100% { transform: translateY(0); }
     }
 }
+
+.active{
+  background-color: white;
 }

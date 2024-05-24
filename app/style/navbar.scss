@@ -15,7 +15,7 @@
    }
 .mobileopened{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     // background-color: rgb(148 163 184);
     backdrop-filter: blur(5px);
     background-color: i.$slate400;
@@ -48,6 +48,7 @@
 }
 .title{
     // background-color: green;
+    color: white;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -130,7 +131,7 @@ li{
  }
 
 li:hover {
-  color: i.$emerald;  
+  color: rgb(235, 185, 78);  
 }
 .rotate{
     rotate: -90deg;
@@ -139,9 +140,9 @@ li:hover {
     position: absolute;
     top: 6px;
     margin-left: -20px ;
-    width: 35px;
-    height: 20px;
-    background-color: i.$new;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(252, 59, 59);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,9 +159,11 @@ li:hover {
 
 .notify{
     position: absolute;
-    width: 35px;
+    width: 20px;
     height: 20px;
-    background-color: i.$new;
+    // background-color: i.$new;
+    background-color:  rgb(252, 59, 59);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,14 +174,16 @@ li:hover {
 
     
     z-index: -100;
-    width: 35px;
+    width: 20px;
     height: 20px;
-    margin-left:70px ;
+    margin-left:75px ;
     margin-top: -1rem;
 
     @include res.max-sm{
-       background-color: i.$new;
-        margin-left: 110px; 
+    // background-color: i.$new;
+    background-color:  rgb(252, 59, 59);
+    margin-top: -4.5rem;
+    margin-left: 140px; 
     }
   }
 

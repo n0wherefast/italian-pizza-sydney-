@@ -12,6 +12,7 @@ import {CARD} from '../data/interface'
 function Card({title, price ,entre, main ,dessert,special}:CARD) {
 
   return (
+    <>
     <div className={` ${teko.className}  ${special==true ? "cardSpecial ribbon":"cardContainer ribbon"}   `}>
    
       <div className="wrap">
@@ -34,6 +35,7 @@ function Card({title, price ,entre, main ,dessert,special}:CARD) {
         <div className='C-price '>{price} </div>
         <div>waiter available for 200$ extra</div>
     </div>
+    </>
   )
 }
 

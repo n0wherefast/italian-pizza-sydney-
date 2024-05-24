@@ -7,7 +7,7 @@ import '../../style/traditionals.scss'
 function WrappedMenus({data}:any) {
   return (
     <>
-        <main className='mainTrad'>
+    <main className='mainTrad'>
       <div className='imgCont'></div>
      
      <div className='menuList'>
@@ -22,7 +22,6 @@ function WrappedMenus({data}:any) {
       })}
     </div> 
     </main>
-      
     </>
   )
 }

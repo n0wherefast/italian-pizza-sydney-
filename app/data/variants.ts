@@ -9,6 +9,10 @@ export const variantY:Variants = {
     start:{opacity:0 ,y:-20},
     end:{opacity:1, y:1},
     }
+export const Circle:Variants = {
+    start:{opacity:0 ,scale:0}  ,
+    end:{opacity:1, scale:1 },
+    }
 
 //  export const delay:object = {delay:0.25}
 //  export const delayP:object = {delay:0.35}
