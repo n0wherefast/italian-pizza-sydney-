@@ -14,9 +14,9 @@ function WrappedAbout() {
   return (
     <>
         <div className='mainAbout'>
-          <motion.div  className='circle-cont'>
+                  <div  className='circle-cont'>
                     <div className='circleAB'/>
-                  </motion.div>
+                  </div>
         <h1>WHO I&apos;AM  AND WHAT IS ITALIAN PIZZA SYDNEY</h1>
         <div className='sections'>
                  
@@ -24,7 +24,6 @@ function WrappedAbout() {
                   variants={variantY!}
                   initial='start'
                   whileInView='end'
-                 
                   className='text'> 
                     My name is Alessandro and I&apos;m from Sicily. I started this job when I was a kid with a lot of passion and sacrificies. Now I&apos;m here to bring a taste of Italy directly to your place
                     We offer authentic
@@ -33,7 +32,9 @@ function WrappedAbout() {
                     We are here to make your day special such as birthday, family gather, teambonding, wedding etc.
                 </motion.div>
                 
-            <motion.div  variants={variantX!} initial="start" whileInView="end">
+            <motion.div 
+              variants={variantX!}
+              initial="start" whileInView="end">
                <Image src={alePic} alt='' className='imageAbout'/>
             </motion.div>
         </div>
@@ -46,7 +47,9 @@ function WrappedAbout() {
 
 
         <div className='mid-sections'>
-        <motion.div  variants={variantX!} initial="start" whileInView="end">
+        <motion.div  
+          variants={ variantX!}
+          initial="start" whileInView="end">
           <Image src={TruckPic} alt='pizza truck ' className='imageAbout'/>
         </motion.div> 
 
@@ -58,8 +61,7 @@ function WrappedAbout() {
                     <Link aria-label='instagram' className='IG' href={'https://www.instagram.com/italianpizzasyd?igsh=NmxsOGVmeWQ2dXVv'}>
                     <SlSocialInstagram/> 
                     </Link> 
-                {/* </div> */}
-                {/* <div className='Social'> */}
+                
                     <Link aria-label='whatsapp' className='WA' href={'https://wa.me/qr/WEOOT3HPLJOVG1 '}>
                       <FaWhatsapp/>
                     </Link>

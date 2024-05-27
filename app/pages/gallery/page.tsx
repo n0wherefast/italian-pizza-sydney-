@@ -3,16 +3,13 @@ import './gallery.scss'
 import GalleryWrapped from '@/app/components/wrapped/GalleryWrapped'
 import { client } from '@/app/data/sanity'
 
-const query = `  *[_type == 'galleryContent']{
+const query = `*[_type == 'galleryContent']{
   title,id,image
 }`
 
 async function getData() {
    const data = await client.fetch(query)
-  // const data =  await fetch('https://picsum.photos/v2/list')
-  //     .then(response => response.json())
-  //     .then(json => json)
-      return data
+    return data
 }
 
 
