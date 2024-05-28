@@ -70,8 +70,8 @@ function WrappedAbout() {
         </div>
 
         <div className='Contact'>
-                <p>Call: 0481.769.450</p>
-                <p>E-mail: Italianpizzasydney88@gmail.com</p>
+            <p>Call: 0481.769.450</p>
+            <p>E-mail: Italianpizzasydney88@gmail.com</p>
         </div>
     </div>
   </>

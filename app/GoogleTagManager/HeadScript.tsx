@@ -3,7 +3,7 @@ import Script from 'next/script'
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { RootState } from '../redux/store'
-function HeadScript() {
+ function  HeadScript() {
     const consent = useSelector((state:RootState)=> state.globaleStates.isConsent)
   return (
     <>
