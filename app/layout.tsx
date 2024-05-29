@@ -55,7 +55,7 @@ console.log(dataEvent[0].isEvent)
             <HeadScript/>
             <IframeGTM/>
             <Navbar data={{dataPack, dataEvent}}/>
-            <div className="w-full bg-zinc-900 ">
+            <div className=" ">
               {children}
             </div>
               <PrivacyConsent/>

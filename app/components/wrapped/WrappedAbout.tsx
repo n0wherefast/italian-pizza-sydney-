@@ -9,6 +9,7 @@ import { motion} from 'framer-motion'
 import { variantX ,variantY} from '@/app/data/variants';
 import Link from 'next/link';
 
+
 function WrappedAbout() {
      
   return (
@@ -50,7 +51,7 @@ function WrappedAbout() {
         <motion.div  
           variants={ variantX!}
           initial="start" whileInView="end">
-          <Image src={TruckPic} alt='pizza truck ' className='imageAbout'/>
+          <Image src={TruckPic} alt='pizza truck ' className='imageAbout img2 '/>
         </motion.div> 
 
             <div className="socialCont">

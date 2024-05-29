@@ -72,7 +72,7 @@ function WrappedPackages ( data:DATA ) {
             })}
         
         </Swiper>
-    :
+        :
        <div className='mainP'>
           {dataPack.map((pack:PACKAGES ,id:number)=>{  
             const {title,price,entre,main,dessert } = pack
