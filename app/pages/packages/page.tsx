@@ -35,7 +35,10 @@ async function  Packages() {
   return (
     <>
       <WrappedPackages data={{dataPack,dataSpecialPack}} />
-      <TableMinSpend/>
+      <div className='table'>
+        <TableMinSpend/>
+      </div>
+      
     </>
   )
 }
