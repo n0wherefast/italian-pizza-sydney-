@@ -3,14 +3,15 @@ import { client } from '@/app/data/sanity';
 import React from 'react'
 import './pack.scss'
 import WrappedPackages from '@/app/components/wrapped/WrappedPackages';
+import TableMinSpend from '@/app/components/TableMinSpend';
 export const revalidate = 30 //revalidate at 30 seconds
 
  const queryPack =`
-  *[_type=='packages'] {
+  *[_type=='packages']{
     title,price,entre,main,dessert
   }`;
   const querySpecialPack =`
-  *[_type=='special_pack'] {
+  *[_type=='special_pack']{
     title,price,entre,main,dessert 
   }`;
 
@@ -34,6 +35,7 @@ async function  Packages() {
   return (
     <>
       <WrappedPackages data={{dataPack,dataSpecialPack}} />
+      <TableMinSpend/>
     </>
   )
 }

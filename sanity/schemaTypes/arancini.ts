@@ -4,6 +4,11 @@ export default {
     title:'Arancini',
     fields:[
         {
+            name:'id',
+            type:'number',
+            title:'ID'
+        },
+        {
             name:'title',
             type:'string',
             title:'title of card'

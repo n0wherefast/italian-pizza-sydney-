@@ -10,6 +10,7 @@ export interface PACKAGES {
 export interface MENU {
     title:string;
     ingredients:string;
+    id:number;
 }
 export interface DATA{
     data:{

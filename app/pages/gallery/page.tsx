@@ -6,6 +6,7 @@ import { client } from '@/app/data/sanity'
 const query = `*[_type == 'galleryContent']{
   title,id,image
 }`
+export const revalidate = 30 //revalidate at 30 seconds
 
 async function getData() {
    const data = await client.fetch(query)

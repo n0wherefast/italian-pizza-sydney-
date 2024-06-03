@@ -39,13 +39,16 @@
     right:7.5rem;
     font-size: x-large;
 }
+.text-center{
+    max-width: 50%;
+}
 .titleCard{
     // color: global.$emerald;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.6rem;
+    font-size: 2.3rem;
     font-weight: bold;
 }
 .C-Sec{
@@ -77,7 +80,7 @@
     border-radius: 13px;
 }
 p{
-    margin: 1rem;
+    margin: .9rem;
 }
 
 h1{

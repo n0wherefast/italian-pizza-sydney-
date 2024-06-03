@@ -27,7 +27,7 @@ function Card({title, price ,entre, main ,dessert,special}:CARD) {
             <p className='textXL'>Entre</p><p>{entre}</p>
         </div>
         <div className='C-Sec'>
-            <p className=' textXL'>Main</p><p className='text-center'>{main}</p>
+            <p className=' textXL'>Main</p><p className='text-center'>{main}</p> 
         </div>
         <div className='C-Sec'>
             <p className=' textXL'>Dessert</p><p>{dessert}</p>

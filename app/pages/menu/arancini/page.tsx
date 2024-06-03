@@ -6,7 +6,7 @@ import { Teko } from 'next/font/google'
 async function getData() {
   const query =`
   *[_type=='arancini'] | order(_createdAT desc){
-    title,ingredients
+    title,ingredients,id
   }
   `
   const data = await client.fetch(query)
@@ -25,10 +25,10 @@ const data =  await getData()
       <div className='imgContAra'></div>
      
      <div className='menuListPrem menuList'>
-      {data.map((itm:MENU,idx:number) => {
-        const {title,ingredients} = itm
+      {data.map((itm:MENU) => {
+        const {title,ingredients,id} = itm
         return(
-          <div key={idx} className='list'>
+          <div key={id} className='list'>
               <h1 className='pizzaTitle'>{title}</h1>
               <p className='ingredients'>{ingredients}</p>
           </div>
