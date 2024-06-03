@@ -25,14 +25,7 @@ function WrappedPackages ( data:DATA ) {
     const [size,width,isClick] = useSize()
     const dispatch = useDispatch()
 
-    // useEffect(()=>{
-    //   dispatch(updatePack(globalStatePack))
-      
-    // },[])
-
-  
-    // console.log(globalStatePack)
-
+   
 
 
     return (

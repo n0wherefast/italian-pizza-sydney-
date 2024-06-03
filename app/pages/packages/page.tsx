@@ -6,11 +6,11 @@ import WrappedPackages from '@/app/components/wrapped/WrappedPackages';
 export const revalidate = 30 //revalidate at 30 seconds
 
  const queryPack =`
-  *[_type=='packages'] | order(_createdAT desc){
+  *[_type=='packages'] {
     title,price,entre,main,dessert
   }`;
   const querySpecialPack =`
-  *[_type=='special_pack'] | order(_createdAT desc){
+  *[_type=='special_pack'] {
     title,price,entre,main,dessert 
   }`;
 
