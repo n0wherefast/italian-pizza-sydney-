@@ -14,6 +14,8 @@ import { useSelector,useDispatch } from 'react-redux';
 import { RootState } from '../../redux/store';
 import { updateValue } from '../../redux/slice/sizeManager';
 import { updatePack } from '@/app/redux/slice/globaleStates';
+export const revalidate = 30 //revalidate at 30 seconds
+
 
 
 function WrappedPackages ( data:DATA ) {
