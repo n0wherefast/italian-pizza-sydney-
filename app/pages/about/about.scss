@@ -82,8 +82,11 @@ h1{
     font-size: 1rem;
     font-weight: 500;
     padding-top: 1rem;
-    border-top: 2px solid black;
-    z-index: 100;
+    // border-top: 2px solid black;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+    z-index: 0;
+    
 }
 
 .WA{
@@ -105,7 +108,7 @@ h1{
   background-color: global.$redOne;  
   border-radius: 100%;
   position: fixed;
-  // z-index: 10;
+  z-index:0;
   top: -5rem;
   left: 15%;
   width: 34rem;
@@ -177,3 +180,4 @@ h1{
 }
   } 
 }
+

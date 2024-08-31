@@ -6,6 +6,55 @@ export interface LINK {
     news?:boolean,
 }
 
+export const refForm = [
+    {
+        id:'name',
+        name:'Name',
+        type:'text'
+      },
+      {
+        id:'date',
+        name:'Date',
+        type:'date'
+      },
+      {
+        id:'time',
+        name:'Time',
+        type:'time'
+      },
+      {
+        id:'phone',
+        name:'Phone',
+        type:'tel'
+      },
+      {
+        id:'email',
+        name:'Email',
+        type:'email'
+      },
+      {
+        id:'address',
+        name:'Address',
+        type:'text'
+      },
+      {
+        id:'number of adults',
+        name:'Number of adults',
+        type:'number'
+      },
+      {
+        id:'number of kids under 10',
+        name:'Number of kids under 10',
+        type:'number'
+      },
+    //   {
+    //     id:'message',
+    //     name:'Message',
+    //     type:'textarea'
+    //   },
+  ]
+
+
 export const  links = [
     {id:0,
     name:'Home',

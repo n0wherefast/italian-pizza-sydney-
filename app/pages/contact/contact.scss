@@ -1,0 +1,70 @@
+h1{
+    font-weight: 800;
+}
+.ContactPage{
+    // background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    z-index: 0;
+    margin-bottom: 4rem;
+
+   form{
+    // background-color:darkslategray;
+    // backdrop-filter: blur(4px);
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding: 2rem;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.inputCont , .selectCont ,.textCont{
+  font-size: large;
+  font-weight: bolder;
+  color: #ffa600;
+  min-width:20rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:.5rem;
+  background-color:white;
+//   border: 1px solid tomato;
+  padding:.7rem;
+  border-radius:.5rem;
+} 
+.selectCont{
+  min-width: 10rem;
+} 
+.textCont{
+    // width:35rem;
+}
+
+input{
+    border-radius: 15px;
+    width: 70%;
+    height:1rem;
+    padding: .5rem;
+    border: 1px solid ;
+}
+.btnCont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnForm{
+    width: 8rem;
+    height:3rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding:1rem;
+}
+}
