@@ -22,9 +22,10 @@ h1{
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
+    margin-top: 0px;
 }
 .inputCont , .selectCont ,.textCont{
-  font-size: large;
+  font-size: 1.7rem;
   font-weight: bolder;
   color: #ffa600;
   min-width:20rem;
@@ -43,6 +44,15 @@ h1{
 } 
 .textCont{
     // width:35rem;
+}
+textarea{
+  margin: 1rem;
+  padding: .5rem;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: capitalize;
+  width: 15rem;
+  height: 5rem;
 }
 
 input{

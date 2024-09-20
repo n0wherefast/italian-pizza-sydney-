@@ -5,6 +5,17 @@ export interface LINK {
     delay:number,
     news?:boolean,
 }
+const dateMin =  () => {
+  const today =  new Date().toJSON().slice(0,10)
+  return  today
+}
+const dateMax =  () => {
+  const today =  new Date().toJSON().slice(0,4)
+  const n = Number(today)+2
+  const nn = n.toString()
+  return  new Date(nn).toJSON().slice(0,10)
+}
+
 
 export const refForm = [
     {
@@ -15,7 +26,9 @@ export const refForm = [
       {
         id:'date',
         name:'Date',
-        type:'date'
+        type:'date',
+        min: dateMin(),
+        max: dateMax()
       },
       {
         id:'time',
@@ -39,19 +52,16 @@ export const refForm = [
       },
       {
         id:'number of adults',
-        name:'Number of adults',
-        type:'number'
+        name:'numberOfAdults',
+        type:'number',
+        min:'0'
       },
       {
         id:'number of kids under 10',
-        name:'Number of kids under 10',
-        type:'number'
+        name:'numberOfKidsUnder10',
+        type:'number',
+        min:'0'
       },
-    //   {
-    //     id:'message',
-    //     name:'Message',
-    //     type:'textarea'
-    //   },
   ]
 
 
