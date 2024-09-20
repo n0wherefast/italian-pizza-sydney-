@@ -8,6 +8,7 @@ import TruckPic from '../../assets/wep files/italianPIzzaSydney (6).webp'
 import { motion} from 'framer-motion'
 import { variantX ,variantY} from '@/app/data/variants';
 import Link from 'next/link';
+import ContactPage from '@/app/pages/contact/page';
 
 
 function WrappedAbout() {
@@ -54,6 +55,12 @@ function WrappedAbout() {
           <Image src={TruckPic} alt='pizza truck ' className='imageAbout img2 '/>
         </motion.div> 
 
+        <div className='Contact'>
+          <ContactPage/>
+            <p>Call: 0481.769.450</p>
+            <p>E-mail: Italianpizzasydney88@gmail.com</p>
+        </div>
+
             <div className="socialCont">
                 <div className='Social'>
                     <Link aria-label='facebook' className='FB' href={'https://www.facebook.com/profile.php?id=100088427027910'}>
@@ -69,12 +76,10 @@ function WrappedAbout() {
             </div>
           </div>
         </div>
-
-        <div className='Contact'>
-            <p>Call: 0481.769.450</p>
-            <p>E-mail: Italianpizzasydney88@gmail.com</p>
-        </div>
+          
+        
     </div>
+    
   </>
   )
 }
