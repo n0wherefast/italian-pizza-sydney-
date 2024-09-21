@@ -52,7 +52,7 @@ function HomePage() {
                   <div className='textCard'>Welcome! i&apos;m here to bring a taste of Italy  directly to your place!</div>
                 </div>
                 <div className="cardSection">
-                  <Link href={'https://wa.me/qr/WEOOT3HPLJOVG1'} className='btnHome'>Order Now 🍕</Link>
+                  <Link href={'/pages/about#formReq'} className='btnHome'>Enquire Now! 🍕</Link>
                   {
                       isEvent == true ?  
                       <Link href={'/pages/event'} className="event pulse ">

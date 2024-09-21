@@ -106,8 +106,10 @@ async function handleSubmit(e:any) {
 }
 
   return (
+    <>
+    <br id='formReq'   />
     <div className={` ${teko.className} ContactPage`}>
-      <h1> send a message</h1>
+      <h1 className='titForm'>  send a message</h1>
     <div className='sectionsContact'>
         <form action="" onSubmit={handleSubmit} >
           {
@@ -142,6 +144,7 @@ async function handleSubmit(e:any) {
                   <option value="packA">pack A</option>
                   <option value="packB">pack B</option>
                   <option value="packC">pack C</option>
+                  <option value="packD">pack D</option>
                   <option value="specialPack">special pack</option>
                 </select>
           </div>
@@ -162,6 +165,7 @@ async function handleSubmit(e:any) {
       <div className='imageContact'/>
     </div>   */}
 </div>
+</>
   )
 }
 
