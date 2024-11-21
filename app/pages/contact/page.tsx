@@ -69,7 +69,7 @@ async function handleSubmit(e:any) {
     address: e.target.address.value,
     pack: e.target.pack.value,
     numberOfAdults: e.target.numberOfAdults.value,
-    numberOfKidsUnder10: e.target.numberOfKidsUnder10.value,
+    numberOfKidsUnder10: e.target.numberOfKidsUnder.value,
   }
   const response = await fetch("https://api.web3forms.com/submit", {
       mode : "cors",
