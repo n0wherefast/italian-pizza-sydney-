@@ -5,7 +5,7 @@ function TableMinSpend() {
   return (
     <div className='main-spend'>
         <div className='head-spend'>
-            Children 6-12 years old $15
+            Children 6-12 years old $15 (pizza only)
         </div>
         <div className='container-pack-spend'>
             <div className='packA'> 
